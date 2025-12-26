@@ -1,19 +1,19 @@
 {
   "tokens": [
-    "TEST",
     "AVNT",
-    "PENDLE",
     "MORPHO",
-    "TST",
-    "AAVE"
+    "SPX",
+    "PENDLE",
+    "BIO",
+    "MEME"
   ],
   "scores": [
     206,
-    203,
+    204,
     202,
-    201,
-    196,
-    194
+    198,
+    198,
+    196
   ],
-  "timestamp": "2025-12-26T14:18:22.047832"
+  "timestamp": "2025-12-26T14:29:02.351786"
 }
