@@ -172,5 +172,34 @@
       }
     ],
     "timestamp": "2025-12-26T15:01:21.635533"
+  },
+  "2025-12-26_15-22": {
+    "tokens": [
+      {
+        "token": "MEME",
+        "score": 208
+      },
+      {
+        "token": "AVNT",
+        "score": 206
+      },
+      {
+        "token": "FOGO",
+        "score": 204
+      },
+      {
+        "token": "BIO",
+        "score": 202
+      },
+      {
+        "token": "STABLE",
+        "score": 200
+      },
+      {
+        "token": "HMSTR",
+        "score": 198
+      }
+    ],
+    "timestamp": "2025-12-26T15:22:11.535274"
   }
 }
