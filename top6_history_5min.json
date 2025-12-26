@@ -752,5 +752,34 @@
       }
     ],
     "timestamp": "2025-12-26T19:32:17.013966"
+  },
+  "2025-12-26_19-40": {
+    "tokens": [
+      {
+        "token": "STABLE",
+        "score": 206
+      },
+      {
+        "token": "CC",
+        "score": 204
+      },
+      {
+        "token": "BERA",
+        "score": 202
+      },
+      {
+        "token": "XPL",
+        "score": 200
+      },
+      {
+        "token": "INIT",
+        "score": 198
+      },
+      {
+        "token": "NIL",
+        "score": 196
+      }
+    ],
+    "timestamp": "2025-12-26T19:40:42.328350"
   }
 }
