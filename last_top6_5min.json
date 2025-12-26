@@ -2,10 +2,10 @@
   "tokens": [
     "AVNT",
     "NIL",
-    "HYPE",
-    "BERA",
     "STABLE",
-    "BANANA"
+    "HYPE",
+    "BANANA",
+    "BERA"
   ],
   "scores": [
     204,
@@ -15,5 +15,5 @@
     196,
     194
   ],
-  "timestamp": "2025-12-26T23:50:52.736086"
+  "timestamp": "2025-12-26T23:56:19.771105"
 }
