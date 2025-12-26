@@ -1216,5 +1216,34 @@
       }
     ],
     "timestamp": "2025-12-26T21:58:11.290304"
+  },
+  "2025-12-26_22-14": {
+    "tokens": [
+      {
+        "token": "FOGO",
+        "score": 208
+      },
+      {
+        "token": "NIL",
+        "score": 206
+      },
+      {
+        "token": "INIT",
+        "score": 204
+      },
+      {
+        "token": "AIXBT",
+        "score": 202
+      },
+      {
+        "token": "MON",
+        "score": 200
+      },
+      {
+        "token": "CC",
+        "score": 198
+      }
+    ],
+    "timestamp": "2025-12-26T22:14:27.249926"
   }
 }
