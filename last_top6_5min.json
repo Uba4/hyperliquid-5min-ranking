@@ -2,10 +2,10 @@
   "tokens": [
     "FOGO",
     "NIL",
-    "BERA",
     "INIT",
-    "STABLE",
-    "XPL"
+    "BERA",
+    "LIT",
+    "MEME"
   ],
   "scores": [
     206,
@@ -15,5 +15,5 @@
     198,
     196
   ],
-  "timestamp": "2025-12-26T20:11:39.026981"
+  "timestamp": "2025-12-26T20:33:59.539551"
 }
