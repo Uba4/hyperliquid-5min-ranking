@@ -1,11 +1,11 @@
 {
   "tokens": [
     "AVNT",
-    "HEMI",
     "INIT",
     "STABLE",
+    "HEMI",
     "TNSR",
-    "WLFI"
+    "AAVE"
   ],
   "scores": [
     208,
@@ -15,5 +15,5 @@
     200,
     198
   ],
-  "timestamp": "2025-12-26T16:25:57.102152"
+  "timestamp": "2025-12-26T16:45:04.238570"
 }
