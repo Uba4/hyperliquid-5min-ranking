@@ -317,5 +317,34 @@
       }
     ],
     "timestamp": "2025-12-26T16:01:18.129594"
+  },
+  "2025-12-26_16-25": {
+    "tokens": [
+      {
+        "token": "AVNT",
+        "score": 208
+      },
+      {
+        "token": "HEMI",
+        "score": 206
+      },
+      {
+        "token": "INIT",
+        "score": 204
+      },
+      {
+        "token": "STABLE",
+        "score": 202
+      },
+      {
+        "token": "TNSR",
+        "score": 200
+      },
+      {
+        "token": "WLFI",
+        "score": 198
+      }
+    ],
+    "timestamp": "2025-12-26T16:25:57.101637"
   }
 }
