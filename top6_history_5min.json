@@ -1332,5 +1332,34 @@
       }
     ],
     "timestamp": "2025-12-26T22:53:25.282659"
+  },
+  "2025-12-26_22-59": {
+    "tokens": [
+      {
+        "token": "FOGO",
+        "score": 206
+      },
+      {
+        "token": "AVNT",
+        "score": 204
+      },
+      {
+        "token": "NIL",
+        "score": 202
+      },
+      {
+        "token": "CC",
+        "score": 200
+      },
+      {
+        "token": "WLFI",
+        "score": 198
+      },
+      {
+        "token": "PUMP",
+        "score": 196
+      }
+    ],
+    "timestamp": "2025-12-26T22:59:21.525884"
   }
 }

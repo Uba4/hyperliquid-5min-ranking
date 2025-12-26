@@ -2,7 +2,7 @@
   "FOGO": {
     "entry_time": "2025-12-26T20:11:38.617338",
     "entry_price": 0.1653,
-    "current_price": 0.23332,
+    "current_price": 0.22001,
     "max_price": 0.23695,
     "min_price": 0.16449,
     "in_top6": true
@@ -10,41 +10,41 @@
   "NIL": {
     "entry_time": "2025-12-26T20:11:38.617338",
     "entry_price": 0.070274,
-    "current_price": 0.079288,
-    "max_price": 0.079916,
+    "current_price": 0.080242,
+    "max_price": 0.080242,
     "min_price": 0.070274,
-    "in_top6": true
-  },
-  "MON": {
-    "entry_time": "2025-12-26T21:46:34.222567",
-    "entry_price": 0.023799,
-    "current_price": 0.02341,
-    "max_price": 0.023844,
-    "min_price": 0.02341,
     "in_top6": true
   },
   "CC": {
     "entry_time": "2025-12-26T22:14:26.769147",
     "entry_price": 0.09941,
-    "current_price": 0.09947,
-    "max_price": 0.09979,
+    "current_price": 0.09982,
+    "max_price": 0.09982,
     "min_price": 0.0993,
     "in_top6": true
   },
   "AVNT": {
     "entry_time": "2025-12-26T22:35:24.310152",
     "entry_price": 0.37461,
-    "current_price": 0.379,
-    "max_price": 0.38129,
+    "current_price": 0.38321,
+    "max_price": 0.38321,
     "min_price": 0.37461,
     "in_top6": true
   },
   "PUMP": {
     "entry_time": "2025-12-26T22:53:24.733660",
     "entry_price": 0.001821,
-    "current_price": 0.001821,
-    "max_price": 0.001821,
+    "current_price": 0.001823,
+    "max_price": 0.001823,
     "min_price": 0.001821,
+    "in_top6": true
+  },
+  "WLFI": {
+    "entry_time": "2025-12-26T22:59:21.093433",
+    "entry_price": 0.14351,
+    "current_price": 0.14351,
+    "max_price": 0.14351,
+    "min_price": 0.14351,
     "in_top6": true
   }
 }
