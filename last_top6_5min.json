@@ -1,19 +1,19 @@
 {
   "tokens": [
-    "STABLE",
-    "BERA",
     "FOGO",
-    "INIT",
     "NIL",
+    "BERA",
+    "INIT",
+    "STABLE",
     "XPL"
   ],
   "scores": [
     206,
-    203,
-    203,
+    204,
+    202,
     200,
     198,
     196
   ],
-  "timestamp": "2025-12-26T19:56:50.872746"
+  "timestamp": "2025-12-26T20:11:39.026981"
 }
