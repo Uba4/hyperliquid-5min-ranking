@@ -1419,5 +1419,34 @@
       }
     ],
     "timestamp": "2025-12-26T23:32:30.949525"
+  },
+  "2025-12-26_23-43": {
+    "tokens": [
+      {
+        "token": "AVNT",
+        "score": 204
+      },
+      {
+        "token": "NIL",
+        "score": 202
+      },
+      {
+        "token": "BERA",
+        "score": 200
+      },
+      {
+        "token": "STABLE",
+        "score": 198
+      },
+      {
+        "token": "HYPE",
+        "score": 196
+      },
+      {
+        "token": "CC",
+        "score": 194
+      }
+    ],
+    "timestamp": "2025-12-26T23:43:35.949032"
   }
 }
