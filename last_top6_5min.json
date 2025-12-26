@@ -1,19 +1,19 @@
 {
   "tokens": [
     "STABLE",
-    "AVNT",
-    "APEX",
-    "BIO",
     "SYRUP",
-    "BRETT"
+    "BERA",
+    "AVNT",
+    "BRETT",
+    "CC"
   ],
   "scores": [
-    210,
     208,
     206,
-    204,
     202,
-    200
+    202,
+    200,
+    198
   ],
-  "timestamp": "2025-12-26T18:46:13.568210"
+  "timestamp": "2025-12-26T18:57:41.091912"
 }
