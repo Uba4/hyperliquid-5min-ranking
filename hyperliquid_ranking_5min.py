@@ -1,7 +1,7 @@
 """
 Hyperliquid Token Relative Strength Ranking System - 5-MINUTE TIMEFRAME
-With Telegram Notifications for Changes
-Optimized for intraday momentum tracking
+With Telegram Notifications and Performance Tracking
+Tracks entry/exit prices, time in Top 6, and max movements for backtesting
 """
 
 import requests
@@ -22,6 +22,7 @@ SIGNAL_LINE = 50
 LOOKBACK_PERIODS = 200  # 200 five-minute candles (~16-17 hours of data)
 RESULTS_FILE = "top6_history_5min.json"
 LAST_TOP6_FILE = "last_top6_5min.json"
+TRACKING_FILE = "token_tracking_5min.json"  # New: Performance tracking
 MAX_HISTORY_ENTRIES = 288  # Keep 24 hours of 5-min snapshots
 
 # Telegram configuration (loaded from environment variables)
@@ -190,6 +191,121 @@ def calculate_scores(tokens: List[str], data_cache: Dict) -> Dict[str, int]:
     print(f"✅ Completed {successful_comparisons}/{total_comparisons} ratio analyses")
     return scores
 
+# ===================== PERFORMANCE TRACKING =====================
+
+def load_tracking_data() -> Dict:
+    """Load token tracking data"""
+    if os.path.exists(TRACKING_FILE):
+        try:
+            with open(TRACKING_FILE, 'r') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"⚠️  Error loading tracking data: {e}")
+    return {}
+
+def save_tracking_data(tracking: Dict):
+    """Save token tracking data"""
+    try:
+        with open(TRACKING_FILE, 'w') as f:
+            json.dump(tracking, f, indent=2)
+    except Exception as e:
+        print(f"❌ Error saving tracking data: {e}")
+
+def update_tracking(current_top6: List[Tuple[str, int]], data_cache: Dict, tracking: Dict) -> Dict:
+    """
+    Update tracking data for tokens in Top 6
+    Tracks entry, updates max/min, and handles exits
+    """
+    now = datetime.utcnow().isoformat()
+    current_tokens = [token for token, score in current_top6]
+    
+    # Update existing tokens and track new entries
+    for token, score in current_top6:
+        if token in data_cache and not data_cache[token].empty:
+            current_price = float(data_cache[token]['close'].iloc[-1])
+            
+            if token not in tracking:
+                # New entry to Top 6
+                tracking[token] = {
+                    "entry_time": now,
+                    "entry_price": current_price,
+                    "current_price": current_price,
+                    "max_price": current_price,
+                    "min_price": current_price,
+                    "in_top6": True
+                }
+                print(f"📊 Started tracking {token} @ ${current_price:.4g}")
+            else:
+                # Update existing tracking
+                tracking[token]["current_price"] = current_price
+                tracking[token]["max_price"] = max(tracking[token]["max_price"], current_price)
+                tracking[token]["min_price"] = min(tracking[token]["min_price"], current_price)
+                tracking[token]["in_top6"] = True
+    
+    # Mark tokens that left Top 6
+    for token in list(tracking.keys()):
+        if tracking[token].get("in_top6", False) and token not in current_tokens:
+            tracking[token]["in_top6"] = False
+            tracking[token]["exit_time"] = now
+            if token in data_cache and not data_cache[token].empty:
+                tracking[token]["exit_price"] = float(data_cache[token]['close'].iloc[-1])
+            print(f"📊 {token} exited Top 6")
+    
+    return tracking
+
+def calculate_performance_stats(token: str, tracking_data: Dict) -> Dict:
+    """Calculate performance statistics for a token that exited Top 6"""
+    if token not in tracking_data:
+        return None
+    
+    data = tracking_data[token]
+    entry_price = data.get("entry_price", 0)
+    exit_price = data.get("exit_price", entry_price)
+    max_price = data.get("max_price", entry_price)
+    min_price = data.get("min_price", entry_price)
+    entry_time = data.get("entry_time", "")
+    exit_time = data.get("exit_time", "")
+    
+    if entry_price == 0:
+        return None
+    
+    # Calculate percentages
+    net_move_pct = ((exit_price - entry_price) / entry_price) * 100
+    max_upward_pct = ((max_price - entry_price) / entry_price) * 100
+    max_downward_pct = ((min_price - entry_price) / entry_price) * 100
+    
+    # Calculate time spent
+    try:
+        entry_dt = datetime.fromisoformat(entry_time)
+        exit_dt = datetime.fromisoformat(exit_time)
+        time_delta = exit_dt - entry_dt
+        
+        days = time_delta.days
+        hours = time_delta.seconds // 3600
+        minutes = (time_delta.seconds % 3600) // 60
+        
+        if days > 0:
+            time_str = f"{days}d {hours}h {minutes}m"
+        elif hours > 0:
+            time_str = f"{hours}h {minutes}m"
+        else:
+            time_str = f"{minutes}m"
+    except:
+        time_str = "Unknown"
+    
+    return {
+        "entry_price": entry_price,
+        "entry_time": entry_time,
+        "exit_price": exit_price,
+        "exit_time": exit_time,
+        "net_move_pct": net_move_pct,
+        "max_upward_pct": max_upward_pct,
+        "max_upward_price": max_price,
+        "max_downward_pct": max_downward_pct,
+        "max_downward_price": min_price,
+        "time_in_top6": time_str
+    }
+
 # ===================== TELEGRAM NOTIFICATIONS =====================
 
 def send_telegram_message(message: str) -> bool:
@@ -249,10 +365,8 @@ def detect_changes(previous: Optional[Dict], current: List[Tuple[str, int]]) -> 
         return None  # First run, no comparison possible
     
     prev_tokens = previous.get('tokens', [])
-    prev_scores = previous.get('scores', [])
     
     curr_tokens = [token for token, score in current]
-    curr_scores = [score for token, score in current]
     
     # Check if token composition or order changed (ignore scores)
     if prev_tokens == curr_tokens:
@@ -261,94 +375,63 @@ def detect_changes(previous: Optional[Dict], current: List[Tuple[str, int]]) -> 
     changes = {
         "new_entries": [],
         "dropped_out": [],
-        "position_changes": [],
-        "unchanged": []
+        "position_changes": []
     }
     
     # Detect new entries
     for i, token in enumerate(curr_tokens):
         if token not in prev_tokens:
-            changes["new_entries"].append({
-                "token": token,
-                "position": i + 1,
-                "score": curr_scores[i]
-            })
+            changes["new_entries"].append(token)
     
     # Detect dropped tokens
-    for i, token in enumerate(prev_tokens):
+    for token in prev_tokens:
         if token not in curr_tokens:
-            changes["dropped_out"].append({
-                "token": token,
-                "position": i + 1,
-                "score": prev_scores[i]
-            })
+            changes["dropped_out"].append(token)
     
     # Detect position changes (only for tokens that stayed in Top 6)
-    for i, token in enumerate(curr_tokens):
-        if token in prev_tokens:
-            prev_idx = prev_tokens.index(token)
-            prev_pos = prev_idx + 1
-            curr_pos = i + 1
-            prev_score = prev_scores[prev_idx]
-            curr_score = curr_scores[i]
-            
-            if prev_pos != curr_pos:
-                # Position changed - this is what we care about!
-                changes["position_changes"].append({
-                    "token": token,
-                    "prev_position": prev_pos,
-                    "curr_position": curr_pos,
-                    "prev_score": prev_score,
-                    "curr_score": curr_score,
-                    "position_delta": curr_pos - prev_pos
-                })
-            else:
-                # Position same (we don't care about score changes)
-                changes["unchanged"].append({
-                    "token": token,
-                    "position": curr_pos,
-                    "score": curr_score
-                })
+    if not changes["new_entries"] and not changes["dropped_out"]:
+        # Only position changes, check if order actually changed
+        if prev_tokens != curr_tokens:
+            changes["position_changes"] = True
     
     return changes
 
-def format_telegram_notification(changes: Dict, current: List[Tuple[str, int]], previous: Dict) -> str:
-    """Format changes into a beautiful Telegram message"""
+def format_telegram_notification(changes: Dict, current: List[Tuple[str, int]], previous: Dict, data_cache: Dict, tracking: Dict) -> str:
+    """Format changes into a clean notification with performance tracking"""
     timestamp = datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')
     
-    message = f"⚡ <b>5-MIN TOP 6 CHANGE!</b>\n"
+    message = f"⚡ <b>5-MIN TOP 6 CHANGE</b>\n"
     message += f"⏰ Time: {timestamp}\n\n"
     
-    # New entries
-    if changes["new_entries"]:
-        message += "📈 <b>NEW ENTRIES:</b>\n"
-        for entry in changes["new_entries"]:
-            message += f"  • <b>{entry['token']}</b> entered at #{entry['position']} (Score: {entry['score']})\n"
-        message += "\n"
+    # New entries with prices
+    if changes.get("new_entries"):
+        for token in changes["new_entries"]:
+            if token in data_cache and not data_cache[token].empty:
+                price = data_cache[token]['close'].iloc[-1]
+                message += f"📈 <b>New Entry:</b> {token} (${price:,.4g})\n\n"
     
-    # Dropped out
-    if changes["dropped_out"]:
-        message += "📉 <b>DROPPED OUT:</b>\n"
-        for entry in changes["dropped_out"]:
-            message += f"  • <b>{entry['token']}</b> dropped from #{entry['position']} (Score: {entry['score']})\n"
-        message += "\n"
+    # Dropped out with performance stats
+    if changes.get("dropped_out"):
+        for token in changes["dropped_out"]:
+            stats = calculate_performance_stats(token, tracking)
+            if stats:
+                entry_time_short = stats['entry_time'][:16].replace('T', ' ')
+                exit_time_short = stats['exit_time'][:16].replace('T', ' ')
+                
+                message += f"📉 <b>Dropped Out:</b> {token}\n"
+                message += f"   Entry: ${stats['entry_price']:,.4g} @ {entry_time_short}\n"
+                message += f"   Exit: ${stats['exit_price']:,.4g} @ {exit_time_short}\n"
+                message += f"   Net Move: {stats['net_move_pct']:+.2f}%\n"
+                message += f"   Time in Top 6: {stats['time_in_top6']}\n"
+                message += f"   Max Upward: +{stats['max_upward_pct']:.2f}% (${stats['max_upward_price']:,.4g})\n"
+                message += f"   Max Downward: {stats['max_downward_pct']:+.2f}% (${stats['max_downward_price']:,.4g})\n\n"
     
-    # Position changes (tokens that swapped ranks)
-    if changes["position_changes"]:
-        message += "🔄 <b>POSITION CHANGES:</b>\n"
-        for change in changes["position_changes"]:
-            arrow = "⬆️" if change['position_delta'] < 0 else "⬇️"
-            delta_str = f"({change['position_delta']:+d})"
-            
-            message += f"  • <b>{change['token']}</b>: #{change['prev_position']} → #{change['curr_position']} {delta_str} {arrow}\n"
-        message += "\n"
-    
-    # Summary
-    message += "━━━━━━━━━━━━━━━━━━━━━━\n"
-    prev_tokens = ', '.join(previous['tokens'])
+    # Previous and New Top 6
+    prev_tokens = ', '.join(previous.get('tokens', []))
     curr_tokens = ', '.join([token for token, score in current])
-    message += f"<b>Previous:</b> {prev_tokens}\n"
-    message += f"<b>Current:</b>  {curr_tokens}"
+    
+    message += f"<b>Previous TOP 6:</b> {prev_tokens}\n"
+    message += f"<b>New TOP 6:</b> {curr_tokens}"
     
     return message
 
@@ -435,6 +518,9 @@ def main():
     # Load previous Top 6 for comparison
     previous_top6 = load_last_top6()
     
+    # Load tracking data
+    tracking = load_tracking_data()
+    
     # Step 1: Fetch all perpetuals
     print("\n📡 Step 1: Fetching perpetual tokens...")
     all_tokens = fetch_perpetuals_meta()
@@ -493,8 +579,13 @@ def main():
     # Step 6: Display results
     display_results(top6, volume_data)
     
-    # Step 7: Detect changes and send notification
-    print("\n🔍 Step 7: Detecting changes...")
+    # Step 7: Update tracking data
+    print("\n📊 Step 7: Updating performance tracking...")
+    tracking = update_tracking(top6, data_cache, tracking)
+    save_tracking_data(tracking)
+    
+    # Step 8: Detect changes and send notification
+    print("\n🔍 Step 8: Detecting changes...")
     
     # Debug: Show what we're comparing
     if previous_top6:
@@ -506,7 +597,7 @@ def main():
         if prev_tokens != curr_tokens:
             print("🔍 Token composition or order changed! → Will notify")
         else:
-            print("✅ Same tokens in same order → No notification (5-min score changes ignored)")
+            print("✅ Same tokens in same order → No notification")
     else:
         print("📋 First run - no previous data to compare")
     
@@ -514,12 +605,19 @@ def main():
     
     if changes:
         print("🔔 Changes detected! Sending Telegram notification...")
-        message = format_telegram_notification(changes, top6, previous_top6)
+        message = format_telegram_notification(changes, top6, previous_top6, data_cache, tracking)
         send_telegram_message(message)
+        
+        # Clean up tracking for tokens that exited
+        for token in changes.get("dropped_out", []):
+            if token in tracking:
+                del tracking[token]
+                print(f"🗑️  Removed {token} from tracking (exited Top 6)")
+        save_tracking_data(tracking)
     else:
         print("✅ No meaningful changes detected. No notification sent.")
     
-    # Step 8: Save results
+    # Step 9: Save results
     save_results(top6)
     save_last_top6(top6)
     display_history()
