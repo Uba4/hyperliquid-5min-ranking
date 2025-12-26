@@ -1,0 +1,31 @@
+{
+  "2025-12-26_14-18": {
+    "tokens": [
+      {
+        "token": "SPX",
+        "score": 206
+      },
+      {
+        "token": "AVNT",
+        "score": 203
+      },
+      {
+        "token": "PENDLE",
+        "score": 202
+      },
+      {
+        "token": "MORPHO",
+        "score": 201
+      },
+      {
+        "token": "TST",
+        "score": 196
+      },
+      {
+        "token": "AAVE",
+        "score": 194
+      }
+    ],
+    "timestamp": "2025-12-26T14:18:22.047613"
+  }
+}
