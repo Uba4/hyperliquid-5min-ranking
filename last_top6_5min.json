@@ -1,19 +1,19 @@
 {
   "tokens": [
     "MEME",
-    "BIO",
     "AVNT",
+    "BIO",
+    "FOGO",
     "MORPHO",
-    "STABLE",
-    "FOGO"
+    "STABLE"
   ],
   "scores": [
     206,
-    204,
+    203,
     202,
-    200,
+    201,
     198,
     196
   ],
-  "timestamp": "2025-12-26T14:55:56.598551"
+  "timestamp": "2025-12-26T15:01:21.635878"
 }
