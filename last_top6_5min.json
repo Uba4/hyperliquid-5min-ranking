@@ -1,19 +1,19 @@
 {
   "tokens": [
     "APEX",
-    "AVNT",
-    "AAVE",
-    "STABLE",
+    "STBL",
     "INIT",
-    "STBL"
+    "STABLE",
+    "BANANA",
+    "AAVE"
   ],
   "scores": [
+    210,
     208,
     206,
+    204,
     202,
-    202,
-    200,
     200
   ],
-  "timestamp": "2025-12-26T17:01:09.467691"
+  "timestamp": "2025-12-26T17:18:42.592622"
 }

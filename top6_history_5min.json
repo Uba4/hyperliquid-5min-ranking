@@ -433,5 +433,34 @@
       }
     ],
     "timestamp": "2025-12-26T17:01:09.467096"
+  },
+  "2025-12-26_17-18": {
+    "tokens": [
+      {
+        "token": "APEX",
+        "score": 210
+      },
+      {
+        "token": "STBL",
+        "score": 208
+      },
+      {
+        "token": "INIT",
+        "score": 206
+      },
+      {
+        "token": "STABLE",
+        "score": 204
+      },
+      {
+        "token": "BANANA",
+        "score": 202
+      },
+      {
+        "token": "AAVE",
+        "score": 200
+      }
+    ],
+    "timestamp": "2025-12-26T17:18:42.592018"
   }
 }
