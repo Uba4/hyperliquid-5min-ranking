@@ -549,5 +549,34 @@
       }
     ],
     "timestamp": "2025-12-26T17:50:51.407345"
+  },
+  "2025-12-26_17-56": {
+    "tokens": [
+      {
+        "token": "APEX",
+        "score": 212
+      },
+      {
+        "token": "STABLE",
+        "score": 210
+      },
+      {
+        "token": "INIT",
+        "score": 208
+      },
+      {
+        "token": "BIO",
+        "score": 204
+      },
+      {
+        "token": "MON",
+        "score": 204
+      },
+      {
+        "token": "XPL",
+        "score": 202
+      }
+    ],
+    "timestamp": "2025-12-26T17:56:50.627118"
   }
 }
