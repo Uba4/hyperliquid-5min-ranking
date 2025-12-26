@@ -1361,5 +1361,34 @@
       }
     ],
     "timestamp": "2025-12-26T22:59:21.525884"
+  },
+  "2025-12-26_23-16": {
+    "tokens": [
+      {
+        "token": "FOGO",
+        "score": 204
+      },
+      {
+        "token": "AVNT",
+        "score": 202
+      },
+      {
+        "token": "NIL",
+        "score": 200
+      },
+      {
+        "token": "CC",
+        "score": 198
+      },
+      {
+        "token": "STABLE",
+        "score": 196
+      },
+      {
+        "token": "BERA",
+        "score": 194
+      }
+    ],
+    "timestamp": "2025-12-26T23:16:43.972999"
   }
 }
