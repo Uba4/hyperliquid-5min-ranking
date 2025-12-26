@@ -359,27 +359,25 @@ def detect_changes(previous: Optional[Dict], current: List[Tuple[str, int]]) -> 
     """
     Detect changes between previous and current Top 6
     Returns a dict with change details or None if no changes
-    Only triggers on: new entries, dropouts, or position changes (NOT score-only changes)
+    Only triggers on: new entries or dropouts (NOT position-only changes)
     """
     if not previous:
         return None  # First run, no comparison possible
     
     prev_tokens = previous.get('tokens', [])
-    
     curr_tokens = [token for token, score in current]
     
-    # Check if token composition or order changed (ignore scores)
-    if prev_tokens == curr_tokens:
-        return None  # Same tokens in same order = no notification
+    # Check if the COMPOSITION changed (ignore order)
+    if set(prev_tokens) == set(curr_tokens):
+        return None  # Same tokens (just different order) = no notification
     
     changes = {
         "new_entries": [],
-        "dropped_out": [],
-        "position_changes": []
+        "dropped_out": []
     }
     
     # Detect new entries
-    for i, token in enumerate(curr_tokens):
+    for token in curr_tokens:
         if token not in prev_tokens:
             changes["new_entries"].append(token)
     
@@ -387,12 +385,6 @@ def detect_changes(previous: Optional[Dict], current: List[Tuple[str, int]]) -> 
     for token in prev_tokens:
         if token not in curr_tokens:
             changes["dropped_out"].append(token)
-    
-    # Detect position changes (only for tokens that stayed in Top 6)
-    if not changes["new_entries"] and not changes["dropped_out"]:
-        # Only position changes, check if order actually changed
-        if prev_tokens != curr_tokens:
-            changes["position_changes"] = True
     
     return changes
 
@@ -594,10 +586,10 @@ def main():
         print(f"📋 Previous Top 6: {', '.join(prev_tokens)}")
         print(f"📋 Current Top 6:  {', '.join(curr_tokens)}")
         
-        if prev_tokens != curr_tokens:
-            print("🔍 Token composition or order changed! → Will notify")
+        if set(prev_tokens) != set(curr_tokens):
+            print("🔍 Token composition changed! → Will notify")
         else:
-            print("✅ Same tokens in same order → No notification")
+            print("✅ Same tokens (just different order) → No notification")
     else:
         print("📋 First run - no previous data to compare")
     
