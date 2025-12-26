@@ -3,9 +3,9 @@
     "AVNT",
     "INIT",
     "STABLE",
-    "HEMI",
-    "TNSR",
-    "AAVE"
+    "AAVE",
+    "APEX",
+    "STBL"
   ],
   "scores": [
     208,
@@ -15,5 +15,5 @@
     200,
     198
   ],
-  "timestamp": "2025-12-26T16:45:04.238570"
+  "timestamp": "2025-12-26T16:55:49.178584"
 }
