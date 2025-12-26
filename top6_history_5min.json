@@ -85,5 +85,34 @@
       }
     ],
     "timestamp": "2025-12-26T14:35:42.694835"
+  },
+  "2025-12-26_14-48": {
+    "tokens": [
+      {
+        "token": "MORPHO",
+        "score": 206
+      },
+      {
+        "token": "MEME",
+        "score": 204
+      },
+      {
+        "token": "AVNT",
+        "score": 202
+      },
+      {
+        "token": "BIO",
+        "score": 200
+      },
+      {
+        "token": "STABLE",
+        "score": 198
+      },
+      {
+        "token": "MET",
+        "score": 196
+      }
+    ],
+    "timestamp": "2025-12-26T14:48:42.719087"
   }
 }
