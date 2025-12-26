@@ -926,5 +926,34 @@
       }
     ],
     "timestamp": "2025-12-26T20:33:59.538568"
+  },
+  "2025-12-26_20-39": {
+    "tokens": [
+      {
+        "token": "FOGO",
+        "score": 206
+      },
+      {
+        "token": "NIL",
+        "score": 204
+      },
+      {
+        "token": "INIT",
+        "score": 202
+      },
+      {
+        "token": "BERA",
+        "score": 200
+      },
+      {
+        "token": "LIT",
+        "score": 198
+      },
+      {
+        "token": "MEME",
+        "score": 196
+      }
+    ],
+    "timestamp": "2025-12-26T20:39:35.823194"
   }
 }

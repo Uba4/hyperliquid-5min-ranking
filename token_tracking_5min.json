@@ -2,48 +2,48 @@
   "FOGO": {
     "entry_time": "2025-12-26T20:11:38.617338",
     "entry_price": 0.1653,
-    "current_price": 0.16449,
-    "max_price": 0.1653,
+    "current_price": 0.17199,
+    "max_price": 0.17199,
     "min_price": 0.16449,
     "in_top6": true
   },
   "NIL": {
     "entry_time": "2025-12-26T20:11:38.617338",
     "entry_price": 0.070274,
-    "current_price": 0.072435,
-    "max_price": 0.072435,
+    "current_price": 0.072533,
+    "max_price": 0.072533,
     "min_price": 0.070274,
     "in_top6": true
   },
   "BERA": {
     "entry_time": "2025-12-26T20:11:38.617338",
     "entry_price": 0.63662,
-    "current_price": 0.63703,
+    "current_price": 0.63649,
     "max_price": 0.63703,
-    "min_price": 0.63662,
+    "min_price": 0.63649,
     "in_top6": true
   },
   "INIT": {
     "entry_time": "2025-12-26T20:11:38.617338",
     "entry_price": 0.097996,
-    "current_price": 0.1006,
-    "max_price": 0.1006,
+    "current_price": 0.10203,
+    "max_price": 0.10203,
     "min_price": 0.097996,
     "in_top6": true
   },
   "LIT": {
     "entry_time": "2025-12-26T20:33:58.902838",
     "entry_price": 3.4485,
-    "current_price": 3.4485,
+    "current_price": 3.4354,
     "max_price": 3.4485,
-    "min_price": 3.4485,
+    "min_price": 3.4354,
     "in_top6": true
   },
   "MEME": {
     "entry_time": "2025-12-26T20:33:58.902838",
     "entry_price": 0.001033,
-    "current_price": 0.001033,
-    "max_price": 0.001033,
+    "current_price": 0.001035,
+    "max_price": 0.001035,
     "min_price": 0.001033,
     "in_top6": true
   }
