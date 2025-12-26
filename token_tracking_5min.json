@@ -2,23 +2,23 @@
   "FOGO": {
     "entry_time": "2025-12-26T20:11:38.617338",
     "entry_price": 0.1653,
-    "current_price": 0.20212,
-    "max_price": 0.20212,
+    "current_price": 0.21089,
+    "max_price": 0.21089,
     "min_price": 0.16449,
     "in_top6": true
   },
   "NIL": {
     "entry_time": "2025-12-26T20:11:38.617338",
     "entry_price": 0.070274,
-    "current_price": 0.078349,
-    "max_price": 0.078476,
+    "current_price": 0.079916,
+    "max_price": 0.079916,
     "min_price": 0.070274,
     "in_top6": true
   },
   "INIT": {
     "entry_time": "2025-12-26T20:11:38.617338",
     "entry_price": 0.097996,
-    "current_price": 0.1038,
+    "current_price": 0.10188,
     "max_price": 0.10398,
     "min_price": 0.097996,
     "in_top6": true
@@ -26,7 +26,7 @@
   "AIXBT": {
     "entry_time": "2025-12-26T20:46:00.612583",
     "entry_price": 0.031742,
-    "current_price": 0.031828,
+    "current_price": 0.031816,
     "max_price": 0.032058,
     "min_price": 0.031538,
     "in_top6": true
@@ -34,16 +34,16 @@
   "MON": {
     "entry_time": "2025-12-26T21:46:34.222567",
     "entry_price": 0.023799,
-    "current_price": 0.023794,
+    "current_price": 0.023783,
     "max_price": 0.023799,
-    "min_price": 0.023794,
+    "min_price": 0.023783,
     "in_top6": true
   },
   "STBL": {
     "entry_time": "2025-12-26T21:52:17.880528",
     "entry_price": 0.043656,
-    "current_price": 0.043656,
-    "max_price": 0.043656,
+    "current_price": 0.043662,
+    "max_price": 0.043662,
     "min_price": 0.043656,
     "in_top6": true
   }
