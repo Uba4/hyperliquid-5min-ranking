@@ -1,32 +1,24 @@
 {
-  "CC": {
-    "entry_time": "2025-12-27T08:26:56.440952",
-    "entry_price": 0.10086,
-    "current_price": 0.10195,
-    "max_price": 0.10202,
-    "min_price": 0.10071,
-    "in_top6": true
-  },
   "STABLE": {
     "entry_time": "2025-12-27T09:14:22.038473",
     "entry_price": 0.012906,
-    "current_price": 0.013004,
-    "max_price": 0.013009,
+    "current_price": 0.013443,
+    "max_price": 0.013443,
     "min_price": 0.012886,
     "in_top6": true
   },
   "VVV": {
     "entry_time": "2025-12-27T09:33:21.468726",
     "entry_price": 1.4396,
-    "current_price": 1.4194,
+    "current_price": 1.4113,
     "max_price": 1.4446,
-    "min_price": 1.4173,
+    "min_price": 1.4113,
     "in_top6": true
   },
   "BCH": {
     "entry_time": "2025-12-27T09:33:21.468726",
     "entry_price": 611.69,
-    "current_price": 609.5,
+    "current_price": 611.6,
     "max_price": 612.83,
     "min_price": 609.5,
     "in_top6": true
@@ -34,17 +26,25 @@
   "XPL": {
     "entry_time": "2025-12-27T09:33:21.468726",
     "entry_price": 0.15277,
-    "current_price": 0.15369,
+    "current_price": 0.1532,
     "max_price": 0.15384,
     "min_price": 0.15254,
     "in_top6": true
   },
-  "APT": {
-    "entry_time": "2025-12-27T09:50:34.225113",
-    "entry_price": 1.7124,
-    "current_price": 1.7109,
-    "max_price": 1.7146,
-    "min_price": 1.7109,
+  "ZEC": {
+    "entry_time": "2025-12-27T10:21:33.090676",
+    "entry_price": 489.86,
+    "current_price": 489.86,
+    "max_price": 489.86,
+    "min_price": 489.86,
+    "in_top6": true
+  },
+  "IP": {
+    "entry_time": "2025-12-27T10:21:33.090676",
+    "entry_price": 1.5325,
+    "current_price": 1.5325,
+    "max_price": 1.5325,
+    "min_price": 1.5325,
     "in_top6": true
   }
 }
