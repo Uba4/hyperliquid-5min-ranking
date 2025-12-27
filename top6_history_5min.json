@@ -3014,5 +3014,34 @@
       }
     ],
     "timestamp": "2025-12-27T14:57:16.756275"
+  },
+  "2025-12-27_15-11": {
+    "tokens": [
+      {
+        "token": "CC",
+        "score": 192
+      },
+      {
+        "token": "APEX",
+        "score": 190
+      },
+      {
+        "token": "0G",
+        "score": 188
+      },
+      {
+        "token": "BERA",
+        "score": 186
+      },
+      {
+        "token": "APT",
+        "score": 184
+      },
+      {
+        "token": "MOVE",
+        "score": 180
+      }
+    ],
+    "timestamp": "2025-12-27T15:11:11.087522"
   }
 }
