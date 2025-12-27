@@ -2,23 +2,15 @@
   "FARTCOIN": {
     "entry_time": "2025-12-27T06:55:16.334787",
     "entry_price": 0.30909,
-    "current_price": 0.31098,
+    "current_price": 0.30964,
     "max_price": 0.31215,
     "min_price": 0.30909,
-    "in_top6": true
-  },
-  "KAITO": {
-    "entry_time": "2025-12-27T06:55:16.334787",
-    "entry_price": 0.60112,
-    "current_price": 0.61182,
-    "max_price": 0.61182,
-    "min_price": 0.60042,
     "in_top6": true
   },
   "AIXBT": {
     "entry_time": "2025-12-27T07:22:56.711241",
     "entry_price": 0.032311,
-    "current_price": 0.032452,
+    "current_price": 0.032428,
     "max_price": 0.032452,
     "min_price": 0.032311,
     "in_top6": true
@@ -26,7 +18,7 @@
   "AVNT": {
     "entry_time": "2025-12-27T07:34:31.039293",
     "entry_price": 0.41104,
-    "current_price": 0.4167,
+    "current_price": 0.41324,
     "max_price": 0.4167,
     "min_price": 0.41104,
     "in_top6": true
@@ -34,17 +26,25 @@
   "TNSR": {
     "entry_time": "2025-12-27T07:34:31.039293",
     "entry_price": 0.08519,
-    "current_price": 0.0845,
+    "current_price": 0.08401,
     "max_price": 0.08519,
-    "min_price": 0.0845,
+    "min_price": 0.08401,
     "in_top6": true
   },
-  "SPX": {
-    "entry_time": "2025-12-27T07:43:16.480978",
-    "entry_price": 0.49903,
-    "current_price": 0.49903,
-    "max_price": 0.49903,
-    "min_price": 0.49903,
+  "STBL": {
+    "entry_time": "2025-12-27T07:49:11.111112",
+    "entry_price": 0.043786,
+    "current_price": 0.043786,
+    "max_price": 0.043786,
+    "min_price": 0.043786,
+    "in_top6": true
+  },
+  "HEMI": {
+    "entry_time": "2025-12-27T07:49:11.111112",
+    "entry_price": 0.016026,
+    "current_price": 0.016026,
+    "max_price": 0.016026,
+    "min_price": 0.016026,
     "in_top6": true
   }
 }
