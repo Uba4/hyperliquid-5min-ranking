@@ -1,16 +1,8 @@
 {
-  "STABLE": {
-    "entry_time": "2025-12-27T09:14:22.038473",
-    "entry_price": 0.012906,
-    "current_price": 0.012737,
-    "max_price": 0.013714,
-    "min_price": 0.012737,
-    "in_top6": true
-  },
   "ZEC": {
     "entry_time": "2025-12-27T10:21:33.090676",
     "entry_price": 489.86,
-    "current_price": 513.32,
+    "current_price": 511.79,
     "max_price": 513.32,
     "min_price": 489.86,
     "in_top6": true
@@ -18,7 +10,7 @@
   "ZEN": {
     "entry_time": "2025-12-27T10:40:16.344301",
     "entry_price": 8.3446,
-    "current_price": 9.0257,
+    "current_price": 9.0177,
     "max_price": 9.0257,
     "min_price": 8.3446,
     "in_top6": true
@@ -26,15 +18,15 @@
   "FOGO": {
     "entry_time": "2025-12-27T10:49:46.580784",
     "entry_price": 0.24922,
-    "current_price": 0.25399,
+    "current_price": 0.24525,
     "max_price": 0.25495,
-    "min_price": 0.24922,
+    "min_price": 0.24525,
     "in_top6": true
   },
   "ZEREBRO": {
     "entry_time": "2025-12-27T11:17:03.466817",
     "entry_price": 0.027638,
-    "current_price": 0.027982,
+    "current_price": 0.027675,
     "max_price": 0.027982,
     "min_price": 0.027471,
     "in_top6": true
@@ -42,9 +34,17 @@
   "STRK": {
     "entry_time": "2025-12-27T11:44:30.509522",
     "entry_price": 0.08212,
-    "current_price": 0.08292,
-    "max_price": 0.08292,
+    "current_price": 0.083,
+    "max_price": 0.083,
     "min_price": 0.08212,
+    "in_top6": true
+  },
+  "STBL": {
+    "entry_time": "2025-12-27T12:01:02.063466",
+    "entry_price": 0.044629,
+    "current_price": 0.044629,
+    "max_price": 0.044629,
+    "min_price": 0.044629,
     "in_top6": true
   }
 }
