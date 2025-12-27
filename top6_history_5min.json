@@ -3739,5 +3739,34 @@
       }
     ],
     "timestamp": "2025-12-27T19:51:25.547367"
+  },
+  "2025-12-27_19-56": {
+    "tokens": [
+      {
+        "token": "STABLE",
+        "score": 180
+      },
+      {
+        "token": "FOGO",
+        "score": 178
+      },
+      {
+        "token": "AVNT",
+        "score": 176
+      },
+      {
+        "token": "POLYX",
+        "score": 174
+      },
+      {
+        "token": "CC",
+        "score": 172
+      },
+      {
+        "token": "ACE",
+        "score": 170
+      }
+    ],
+    "timestamp": "2025-12-27T19:56:49.448480"
   }
 }
