@@ -2405,5 +2405,34 @@
       }
     ],
     "timestamp": "2025-12-27T10:40:16.916681"
+  },
+  "2025-12-27_10-49": {
+    "tokens": [
+      {
+        "token": "ZEC",
+        "score": 202
+      },
+      {
+        "token": "ZEN",
+        "score": 200
+      },
+      {
+        "token": "STABLE",
+        "score": 198
+      },
+      {
+        "token": "XPL",
+        "score": 196
+      },
+      {
+        "token": "FOGO",
+        "score": 194
+      },
+      {
+        "token": "BCH",
+        "score": 192
+      }
+    ],
+    "timestamp": "2025-12-27T10:49:47.040696"
   }
 }
