@@ -3,30 +3,20 @@
     "entry_time": "2025-12-27T17:43:28.573236",
     "entry_price": 0.013538,
     "entry_volume": 2353952.753538999,
-    "current_price": 0.014963,
-    "current_volume": 2178017.9012459996,
+    "current_price": 0.014487,
+    "current_volume": 2215479.636918,
     "max_price": 0.015006,
     "min_price": 0.013538,
-    "in_top6": true
-  },
-  "CRV": {
-    "entry_time": "2025-12-27T18:30:03.040408",
-    "entry_price": 0.398,
-    "entry_volume": 2593958.5397709995,
-    "current_price": 0.39328,
-    "current_volume": 2745921.7207199996,
-    "max_price": 0.398,
-    "min_price": 0.39313,
     "in_top6": true
   },
   "DOT": {
     "entry_time": "2025-12-27T18:50:22.349602",
     "entry_price": 1.8396,
     "entry_volume": 1596876.8088000007,
-    "current_price": 1.8296,
-    "current_volume": 1610312.66534,
+    "current_price": 1.8272,
+    "current_volume": 1607571.78614,
     "max_price": 1.8396,
-    "min_price": 1.8296,
+    "min_price": 1.8272,
     "in_top6": true
   },
   "FOGO": {
@@ -34,29 +24,39 @@
     "entry_price": 0.215,
     "entry_volume": 1176497.0671599999,
     "current_price": 0.22449,
-    "current_volume": 1180949.68076,
+    "current_volume": 1158173.4577199998,
     "max_price": 0.22449,
     "min_price": 0.215,
-    "in_top6": true
-  },
-  "POLYX": {
-    "entry_time": "2025-12-27T19:26:21.224894",
-    "entry_price": 0.051286,
-    "entry_volume": 391856.6464120002,
-    "current_price": 0.051263,
-    "current_volume": 395006.8650660003,
-    "max_price": 0.051286,
-    "min_price": 0.051263,
     "in_top6": true
   },
   "MNT": {
     "entry_time": "2025-12-27T19:26:21.224894",
     "entry_price": 1.0524,
     "entry_volume": 475974.12428,
-    "current_price": 1.0526,
-    "current_volume": 478065.02244,
+    "current_price": 1.0517,
+    "current_volume": 476961.2578399999,
     "max_price": 1.0526,
-    "min_price": 1.0524,
+    "min_price": 1.0517,
+    "in_top6": true
+  },
+  "CC": {
+    "entry_time": "2025-12-27T19:39:55.735687",
+    "entry_price": 0.11272,
+    "entry_volume": 1680182.6113969993,
+    "current_price": 0.11272,
+    "current_volume": 1680182.6113969993,
+    "max_price": 0.11272,
+    "min_price": 0.11272,
+    "in_top6": true
+  },
+  "AVNT": {
+    "entry_time": "2025-12-27T19:39:55.735687",
+    "entry_price": 0.40389,
+    "entry_volume": 5642283.4351200005,
+    "current_price": 0.40389,
+    "current_volume": 5642283.4351200005,
+    "max_price": 0.40389,
+    "min_price": 0.40389,
     "in_top6": true
   }
 }
