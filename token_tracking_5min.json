@@ -2,28 +2,19 @@
   "APEX": {
     "entry_time": "2025-12-27T13:10:28.172983",
     "entry_price": 0.50315,
-    "current_price": 0.53533,
+    "current_price": 0.53365,
     "max_price": 0.53834,
     "min_price": 0.50315,
     "in_top6": true,
-    "current_volume": 1514172.3561999998
-  },
-  "AVNT": {
-    "entry_time": "2025-12-27T15:48:07.484551",
-    "entry_price": 0.39658,
-    "current_price": 0.39598,
-    "max_price": 0.40587,
-    "min_price": 0.39405,
-    "in_top6": true,
-    "current_volume": 5569205.284729999
+    "current_volume": 1546019.7007600002
   },
   "STBL": {
     "entry_time": "2025-12-27T16:08:54.174196",
     "entry_price": 0.048798,
     "entry_volume": 1181255.023878,
-    "current_price": 0.05018,
-    "current_volume": 1300344.0691020002,
-    "max_price": 0.05018,
+    "current_price": 0.050836,
+    "current_volume": 1315946.2464400001,
+    "max_price": 0.050836,
     "min_price": 0.048798,
     "in_top6": true
   },
@@ -31,8 +22,8 @@
     "entry_time": "2025-12-27T16:54:34.942390",
     "entry_price": 0.076049,
     "entry_volume": 501976.5154300003,
-    "current_price": 0.07557,
-    "current_volume": 507109.439226,
+    "current_price": 0.075945,
+    "current_volume": 477874.156872,
     "max_price": 0.076049,
     "min_price": 0.07557,
     "in_top6": true
@@ -41,20 +32,30 @@
     "entry_time": "2025-12-27T16:54:34.942390",
     "entry_price": 3.4731,
     "entry_volume": 7639121.1227,
-    "current_price": 3.4638,
-    "current_volume": 7676433.602999999,
+    "current_price": 3.44,
+    "current_volume": 7647665.960999997,
     "max_price": 3.4731,
-    "min_price": 3.4638,
+    "min_price": 3.44,
     "in_top6": true
   },
   "STABLE": {
     "entry_time": "2025-12-27T17:00:47.234222",
     "entry_price": 0.013315,
     "entry_volume": 2391661.0487219994,
-    "current_price": 0.013315,
-    "current_volume": 2391661.0487219994,
+    "current_price": 0.013292,
+    "current_volume": 2378297.205466,
     "max_price": 0.013315,
-    "min_price": 0.013315,
+    "min_price": 0.013292,
+    "in_top6": true
+  },
+  "FOGO": {
+    "entry_time": "2025-12-27T17:17:27.396901",
+    "entry_price": 0.216,
+    "entry_volume": 1167491.3396199998,
+    "current_price": 0.216,
+    "current_volume": 1167491.3396199998,
+    "max_price": 0.216,
+    "min_price": 0.216,
     "in_top6": true
   }
 }

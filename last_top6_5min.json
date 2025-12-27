@@ -1,19 +1,19 @@
 {
   "tokens": [
     "STBL",
-    "APEX",
-    "LIT",
-    "AVNT",
     "S",
-    "STABLE"
+    "LIT",
+    "FOGO",
+    "STABLE",
+    "APEX"
   ],
   "scores": [
-    186,
     184,
     182,
     180,
     178,
-    176
+    176,
+    174
   ],
-  "timestamp": "2025-12-27T17:00:47.708090"
+  "timestamp": "2025-12-27T17:17:27.857453"
 }
