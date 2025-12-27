@@ -2,10 +2,10 @@
   "tokens": [
     "FOGO",
     "ZEREBRO",
-    "XPL",
     "FARTCOIN",
     "KAITO",
-    "STABLE"
+    "XPL",
+    "PENDLE"
   ],
   "scores": [
     200,
@@ -15,5 +15,5 @@
     192,
     190
   ],
-  "timestamp": "2025-12-27T06:55:17.125003"
+  "timestamp": "2025-12-27T07:02:26.067601"
 }
