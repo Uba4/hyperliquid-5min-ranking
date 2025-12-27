@@ -2782,5 +2782,34 @@
       }
     ],
     "timestamp": "2025-12-27T13:38:04.572083"
+  },
+  "2025-12-27_13-48": {
+    "tokens": [
+      {
+        "token": "CC",
+        "score": 198
+      },
+      {
+        "token": "ZEN",
+        "score": 196
+      },
+      {
+        "token": "MERL",
+        "score": 194
+      },
+      {
+        "token": "GAS",
+        "score": 192
+      },
+      {
+        "token": "0G",
+        "score": 190
+      },
+      {
+        "token": "APEX",
+        "score": 188
+      }
+    ],
+    "timestamp": "2025-12-27T13:48:54.339545"
   }
 }
