@@ -1941,5 +1941,34 @@
       }
     ],
     "timestamp": "2025-12-27T07:22:57.089433"
+  },
+  "2025-12-27_07-34": {
+    "tokens": [
+      {
+        "token": "AVNT",
+        "score": 200
+      },
+      {
+        "token": "FARTCOIN",
+        "score": 198
+      },
+      {
+        "token": "AIXBT",
+        "score": 196
+      },
+      {
+        "token": "KAITO",
+        "score": 194
+      },
+      {
+        "token": "ZEREBRO",
+        "score": 192
+      },
+      {
+        "token": "TNSR",
+        "score": 190
+      }
+    ],
+    "timestamp": "2025-12-27T07:34:31.550744"
   }
 }
