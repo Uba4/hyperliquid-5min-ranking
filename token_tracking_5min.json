@@ -1,24 +1,8 @@
 {
-  "AVNT": {
-    "entry_time": "2025-12-27T07:34:31.039293",
-    "entry_price": 0.41104,
-    "current_price": 0.40625,
-    "max_price": 0.4167,
-    "min_price": 0.40625,
-    "in_top6": true
-  },
-  "HEMI": {
-    "entry_time": "2025-12-27T07:49:11.111112",
-    "entry_price": 0.016026,
-    "current_price": 0.015915,
-    "max_price": 0.016064,
-    "min_price": 0.015915,
-    "in_top6": true
-  },
   "KAITO": {
     "entry_time": "2025-12-27T08:26:56.440952",
     "entry_price": 0.60396,
-    "current_price": 0.59887,
+    "current_price": 0.6006,
     "max_price": 0.60396,
     "min_price": 0.59887,
     "in_top6": true
@@ -26,25 +10,41 @@
   "CC": {
     "entry_time": "2025-12-27T08:26:56.440952",
     "entry_price": 0.10086,
-    "current_price": 0.10071,
-    "max_price": 0.10086,
+    "current_price": 0.10138,
+    "max_price": 0.10138,
     "min_price": 0.10071,
     "in_top6": true
   },
   "APEX": {
     "entry_time": "2025-12-27T08:26:56.440952",
     "entry_price": 0.49367,
-    "current_price": 0.49288,
+    "current_price": 0.49133,
     "max_price": 0.49367,
-    "min_price": 0.49288,
+    "min_price": 0.49133,
     "in_top6": true
   },
   "LDO": {
     "entry_time": "2025-12-27T08:46:57.291490",
     "entry_price": 0.57228,
-    "current_price": 0.57228,
+    "current_price": 0.5711,
     "max_price": 0.57228,
-    "min_price": 0.57228,
+    "min_price": 0.5711,
+    "in_top6": true
+  },
+  "JTO": {
+    "entry_time": "2025-12-27T08:57:47.189397",
+    "entry_price": 0.38416,
+    "current_price": 0.38416,
+    "max_price": 0.38416,
+    "min_price": 0.38416,
+    "in_top6": true
+  },
+  "SPX": {
+    "entry_time": "2025-12-27T08:57:47.189397",
+    "entry_price": 0.50194,
+    "current_price": 0.50194,
+    "max_price": 0.50194,
+    "min_price": 0.50194,
     "in_top6": true
   }
 }
