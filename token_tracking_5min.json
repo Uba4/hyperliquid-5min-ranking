@@ -3,28 +3,18 @@
     "entry_time": "2025-12-27T17:43:28.573236",
     "entry_price": 0.013538,
     "entry_volume": 2353952.753538999,
-    "current_price": 0.014487,
-    "current_volume": 2215479.636918,
+    "current_price": 0.014472,
+    "current_volume": 2241196.5568199996,
     "max_price": 0.015006,
     "min_price": 0.013538,
-    "in_top6": true
-  },
-  "DOT": {
-    "entry_time": "2025-12-27T18:50:22.349602",
-    "entry_price": 1.8396,
-    "entry_volume": 1596876.8088000007,
-    "current_price": 1.8272,
-    "current_volume": 1607571.78614,
-    "max_price": 1.8396,
-    "min_price": 1.8272,
     "in_top6": true
   },
   "FOGO": {
     "entry_time": "2025-12-27T18:59:01.547993",
     "entry_price": 0.215,
     "entry_volume": 1176497.0671599999,
-    "current_price": 0.22449,
-    "current_volume": 1158173.4577199998,
+    "current_price": 0.21799,
+    "current_volume": 1159194.4683899998,
     "max_price": 0.22449,
     "min_price": 0.215,
     "in_top6": true
@@ -33,9 +23,9 @@
     "entry_time": "2025-12-27T19:26:21.224894",
     "entry_price": 1.0524,
     "entry_volume": 475974.12428,
-    "current_price": 1.0517,
-    "current_volume": 476961.2578399999,
-    "max_price": 1.0526,
+    "current_price": 1.0535,
+    "current_volume": 477045.7816199999,
+    "max_price": 1.0535,
     "min_price": 1.0517,
     "in_top6": true
   },
@@ -43,9 +33,9 @@
     "entry_time": "2025-12-27T19:39:55.735687",
     "entry_price": 0.11272,
     "entry_volume": 1680182.6113969993,
-    "current_price": 0.11272,
-    "current_volume": 1680182.6113969993,
-    "max_price": 0.11272,
+    "current_price": 0.11296,
+    "current_volume": 1684296.6676069996,
+    "max_price": 0.11296,
     "min_price": 0.11272,
     "in_top6": true
   },
@@ -53,10 +43,20 @@
     "entry_time": "2025-12-27T19:39:55.735687",
     "entry_price": 0.40389,
     "entry_volume": 5642283.4351200005,
-    "current_price": 0.40389,
-    "current_volume": 5642283.4351200005,
-    "max_price": 0.40389,
+    "current_price": 0.40439,
+    "current_volume": 5689669.411049998,
+    "max_price": 0.40439,
     "min_price": 0.40389,
+    "in_top6": true
+  },
+  "ACE": {
+    "entry_time": "2025-12-27T19:45:41.581063",
+    "entry_price": 0.2778,
+    "entry_volume": 456275.138009,
+    "current_price": 0.2778,
+    "current_volume": 456275.138009,
+    "max_price": 0.2778,
+    "min_price": 0.2778,
     "in_top6": true
   }
 }
