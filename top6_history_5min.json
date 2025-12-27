@@ -2318,5 +2318,34 @@
       }
     ],
     "timestamp": "2025-12-27T09:55:54.088918"
+  },
+  "2025-12-27_10-01": {
+    "tokens": [
+      {
+        "token": "VVV",
+        "score": 200
+      },
+      {
+        "token": "STABLE",
+        "score": 198
+      },
+      {
+        "token": "XPL",
+        "score": 196
+      },
+      {
+        "token": "CC",
+        "score": 194
+      },
+      {
+        "token": "BCH",
+        "score": 192
+      },
+      {
+        "token": "APT",
+        "score": 190
+      }
+    ],
+    "timestamp": "2025-12-27T10:01:22.628875"
   }
 }
