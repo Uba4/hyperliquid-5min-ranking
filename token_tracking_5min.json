@@ -1,16 +1,8 @@
 {
-  "ZEN": {
-    "entry_time": "2025-12-27T10:40:16.344301",
-    "entry_price": 8.3446,
-    "current_price": 9.1538,
-    "max_price": 9.3878,
-    "min_price": 8.3446,
-    "in_top6": true
-  },
   "CC": {
     "entry_time": "2025-12-27T12:40:02.762311",
     "entry_price": 0.10615,
-    "current_price": 0.10951,
+    "current_price": 0.10912,
     "max_price": 0.10951,
     "min_price": 0.10615,
     "in_top6": true
@@ -18,7 +10,7 @@
   "APEX": {
     "entry_time": "2025-12-27T13:10:28.172983",
     "entry_price": 0.50315,
-    "current_price": 0.50818,
+    "current_price": 0.50658,
     "max_price": 0.50818,
     "min_price": 0.50315,
     "in_top6": true
@@ -26,7 +18,7 @@
   "MERL": {
     "entry_time": "2025-12-27T13:38:03.958253",
     "entry_price": 0.41313,
-    "current_price": 0.41342,
+    "current_price": 0.41364,
     "max_price": 0.41431,
     "min_price": 0.41313,
     "in_top6": true
@@ -34,7 +26,7 @@
   "0G": {
     "entry_time": "2025-12-27T13:38:03.958253",
     "entry_price": 0.9978,
-    "current_price": 1.0084,
+    "current_price": 1.0081,
     "max_price": 1.0084,
     "min_price": 0.99712,
     "in_top6": true
@@ -42,9 +34,17 @@
   "GAS": {
     "entry_time": "2025-12-27T13:48:53.826415",
     "entry_price": 2.0675,
-    "current_price": 2.0591,
+    "current_price": 2.0622,
     "max_price": 2.0675,
     "min_price": 2.0591,
+    "in_top6": true
+  },
+  "STABLE": {
+    "entry_time": "2025-12-27T14:00:04.594000",
+    "entry_price": 0.013014,
+    "current_price": 0.013014,
+    "max_price": 0.013014,
+    "min_price": 0.013014,
     "in_top6": true
   }
 }
