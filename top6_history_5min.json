@@ -2724,5 +2724,34 @@
       }
     ],
     "timestamp": "2025-12-27T12:40:03.339505"
+  },
+  "2025-12-27_13-10": {
+    "tokens": [
+      {
+        "token": "ZEN",
+        "score": 194
+      },
+      {
+        "token": "CC",
+        "score": 192
+      },
+      {
+        "token": "APEX",
+        "score": 190
+      },
+      {
+        "token": "STBL",
+        "score": 188
+      },
+      {
+        "token": "STRK",
+        "score": 186
+      },
+      {
+        "token": "TAO",
+        "score": 184
+      }
+    ],
+    "timestamp": "2025-12-27T13:10:28.614072"
   }
 }
