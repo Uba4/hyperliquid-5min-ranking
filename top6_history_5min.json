@@ -1506,5 +1506,34 @@
       }
     ],
     "timestamp": "2025-12-26T23:56:19.769676"
+  },
+  "2025-12-27_00-44": {
+    "tokens": [
+      {
+        "token": "KAITO",
+        "score": 202
+      },
+      {
+        "token": "0G",
+        "score": 200
+      },
+      {
+        "token": "AVNT",
+        "score": 198
+      },
+      {
+        "token": "BANANA",
+        "score": 196
+      },
+      {
+        "token": "MOVE",
+        "score": 192
+      },
+      {
+        "token": "WLFI",
+        "score": 192
+      }
+    ],
+    "timestamp": "2025-12-27T00:44:23.052872"
   }
 }

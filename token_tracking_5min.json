@@ -1,50 +1,50 @@
 {
-  "NIL": {
-    "entry_time": "2025-12-26T20:11:38.617338",
-    "entry_price": 0.070274,
-    "current_price": 0.083048,
-    "max_price": 0.084257,
-    "min_price": 0.070274,
-    "in_top6": true
-  },
   "AVNT": {
     "entry_time": "2025-12-26T22:35:24.310152",
     "entry_price": 0.37461,
-    "current_price": 0.38953,
-    "max_price": 0.4031,
+    "current_price": 0.41054,
+    "max_price": 0.41054,
     "min_price": 0.37461,
-    "in_top6": true
-  },
-  "STABLE": {
-    "entry_time": "2025-12-26T23:16:43.560800",
-    "entry_price": 0.012229,
-    "current_price": 0.012346,
-    "max_price": 0.012346,
-    "min_price": 0.012134,
-    "in_top6": true
-  },
-  "BERA": {
-    "entry_time": "2025-12-26T23:16:43.560800",
-    "entry_price": 0.63819,
-    "current_price": 0.63861,
-    "max_price": 0.64384,
-    "min_price": 0.63819,
-    "in_top6": true
-  },
-  "HYPE": {
-    "entry_time": "2025-12-26T23:32:30.625738",
-    "entry_price": 25.654,
-    "current_price": 25.807,
-    "max_price": 25.807,
-    "min_price": 25.654,
     "in_top6": true
   },
   "BANANA": {
     "entry_time": "2025-12-26T23:50:52.366280",
     "entry_price": 7.2499,
-    "current_price": 7.2666,
-    "max_price": 7.2666,
+    "current_price": 7.3751,
+    "max_price": 7.3751,
     "min_price": 7.2499,
+    "in_top6": true
+  },
+  "KAITO": {
+    "entry_time": "2025-12-27T00:44:22.481884",
+    "entry_price": 0.57495,
+    "current_price": 0.57495,
+    "max_price": 0.57495,
+    "min_price": 0.57495,
+    "in_top6": true
+  },
+  "0G": {
+    "entry_time": "2025-12-27T00:44:22.481884",
+    "entry_price": 1.0077,
+    "current_price": 1.0077,
+    "max_price": 1.0077,
+    "min_price": 1.0077,
+    "in_top6": true
+  },
+  "MOVE": {
+    "entry_time": "2025-12-27T00:44:22.481884",
+    "entry_price": 0.036709,
+    "current_price": 0.036709,
+    "max_price": 0.036709,
+    "min_price": 0.036709,
+    "in_top6": true
+  },
+  "WLFI": {
+    "entry_time": "2025-12-27T00:44:22.481884",
+    "entry_price": 0.14535,
+    "current_price": 0.14535,
+    "max_price": 0.14535,
+    "min_price": 0.14535,
     "in_top6": true
   }
 }
