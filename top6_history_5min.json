@@ -1796,5 +1796,34 @@
       }
     ],
     "timestamp": "2025-12-27T05:56:08.806281"
+  },
+  "2025-12-27_06-01": {
+    "tokens": [
+      {
+        "token": "FOGO",
+        "score": 206
+      },
+      {
+        "token": "XPL",
+        "score": 204
+      },
+      {
+        "token": "NIL",
+        "score": 202
+      },
+      {
+        "token": "APEX",
+        "score": 200
+      },
+      {
+        "token": "VVV",
+        "score": 198
+      },
+      {
+        "token": "AVNT",
+        "score": 196
+      }
+    ],
+    "timestamp": "2025-12-27T06:01:46.552320"
   }
 }
