@@ -1564,5 +1564,34 @@
       }
     ],
     "timestamp": "2025-12-27T02:29:50.434213"
+  },
+  "2025-12-27_03-44": {
+    "tokens": [
+      {
+        "token": "INIT",
+        "score": 200
+      },
+      {
+        "token": "KAITO",
+        "score": 198
+      },
+      {
+        "token": "ZEC",
+        "score": 196
+      },
+      {
+        "token": "ICP",
+        "score": 194
+      },
+      {
+        "token": "DOT",
+        "score": 192
+      },
+      {
+        "token": "LIT",
+        "score": 190
+      }
+    ],
+    "timestamp": "2025-12-27T03:44:05.389226"
   }
 }
