@@ -2086,5 +2086,34 @@
       }
     ],
     "timestamp": "2025-12-27T08:01:00.924189"
+  },
+  "2025-12-27_08-26": {
+    "tokens": [
+      {
+        "token": "AVNT",
+        "score": 198
+      },
+      {
+        "token": "HEMI",
+        "score": 196
+      },
+      {
+        "token": "KAITO",
+        "score": 192
+      },
+      {
+        "token": "CC",
+        "score": 192
+      },
+      {
+        "token": "STBL",
+        "score": 190
+      },
+      {
+        "token": "APEX",
+        "score": 190
+      }
+    ],
+    "timestamp": "2025-12-27T08:26:56.876879"
   }
 }

@@ -1,32 +1,16 @@
 {
-  "AIXBT": {
-    "entry_time": "2025-12-27T07:22:56.711241",
-    "entry_price": 0.032311,
-    "current_price": 0.032489,
-    "max_price": 0.032489,
-    "min_price": 0.032311,
-    "in_top6": true
-  },
   "AVNT": {
     "entry_time": "2025-12-27T07:34:31.039293",
     "entry_price": 0.41104,
-    "current_price": 0.41246,
+    "current_price": 0.41565,
     "max_price": 0.4167,
     "min_price": 0.41104,
-    "in_top6": true
-  },
-  "TNSR": {
-    "entry_time": "2025-12-27T07:34:31.039293",
-    "entry_price": 0.08519,
-    "current_price": 0.08367,
-    "max_price": 0.08519,
-    "min_price": 0.08367,
     "in_top6": true
   },
   "STBL": {
     "entry_time": "2025-12-27T07:49:11.111112",
     "entry_price": 0.043786,
-    "current_price": 0.043554,
+    "current_price": 0.043735,
     "max_price": 0.043796,
     "min_price": 0.043554,
     "in_top6": true
@@ -34,17 +18,33 @@
   "HEMI": {
     "entry_time": "2025-12-27T07:49:11.111112",
     "entry_price": 0.016026,
-    "current_price": 0.016034,
+    "current_price": 0.01594,
     "max_price": 0.016064,
-    "min_price": 0.016026,
+    "min_price": 0.01594,
     "in_top6": true
   },
-  "BANANA": {
-    "entry_time": "2025-12-27T08:01:00.555251",
-    "entry_price": 7.6585,
-    "current_price": 7.6585,
-    "max_price": 7.6585,
-    "min_price": 7.6585,
+  "KAITO": {
+    "entry_time": "2025-12-27T08:26:56.440952",
+    "entry_price": 0.60396,
+    "current_price": 0.60396,
+    "max_price": 0.60396,
+    "min_price": 0.60396,
+    "in_top6": true
+  },
+  "CC": {
+    "entry_time": "2025-12-27T08:26:56.440952",
+    "entry_price": 0.10086,
+    "current_price": 0.10086,
+    "max_price": 0.10086,
+    "min_price": 0.10086,
+    "in_top6": true
+  },
+  "APEX": {
+    "entry_time": "2025-12-27T08:26:56.440952",
+    "entry_price": 0.49367,
+    "current_price": 0.49367,
+    "max_price": 0.49367,
+    "min_price": 0.49367,
     "in_top6": true
   }
 }
