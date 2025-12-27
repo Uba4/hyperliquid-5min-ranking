@@ -2057,5 +2057,34 @@
       }
     ],
     "timestamp": "2025-12-27T07:54:54.762310"
+  },
+  "2025-12-27_08-01": {
+    "tokens": [
+      {
+        "token": "AVNT",
+        "score": 200
+      },
+      {
+        "token": "TNSR",
+        "score": 196
+      },
+      {
+        "token": "HEMI",
+        "score": 196
+      },
+      {
+        "token": "STBL",
+        "score": 194
+      },
+      {
+        "token": "AIXBT",
+        "score": 190
+      },
+      {
+        "token": "BANANA",
+        "score": 188
+      }
+    ],
+    "timestamp": "2025-12-27T08:01:00.924189"
   }
 }

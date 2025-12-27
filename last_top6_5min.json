@@ -2,18 +2,18 @@
   "tokens": [
     "AVNT",
     "TNSR",
-    "AIXBT",
     "HEMI",
     "STBL",
-    "FARTCOIN"
+    "AIXBT",
+    "BANANA"
   ],
   "scores": [
     200,
-    198,
+    196,
+    196,
     194,
-    194,
-    192,
-    190
+    190,
+    188
   ],
-  "timestamp": "2025-12-27T07:54:54.764221"
+  "timestamp": "2025-12-27T08:01:00.926182"
 }
