@@ -3,8 +3,8 @@
     "entry_time": "2025-12-27T16:08:54.174196",
     "entry_price": 0.048798,
     "entry_volume": 1181255.023878,
-    "current_price": 0.051296,
-    "current_volume": 1332378.8267960004,
+    "current_price": 0.050354,
+    "current_volume": 1356694.9770740005,
     "max_price": 0.051421,
     "min_price": 0.048798,
     "in_top6": true
@@ -13,50 +13,50 @@
     "entry_time": "2025-12-27T16:54:34.942390",
     "entry_price": 0.076049,
     "entry_volume": 501976.5154300003,
-    "current_price": 0.077192,
-    "current_volume": 482281.6385179998,
-    "max_price": 0.077192,
+    "current_price": 0.077579,
+    "current_volume": 489449.0248059998,
+    "max_price": 0.077579,
     "min_price": 0.07557,
-    "in_top6": true
-  },
-  "FOGO": {
-    "entry_time": "2025-12-27T17:17:27.396901",
-    "entry_price": 0.216,
-    "entry_volume": 1167491.3396199998,
-    "current_price": 0.20802,
-    "current_volume": 1168263.1686899997,
-    "max_price": 0.216,
-    "min_price": 0.20802,
     "in_top6": true
   },
   "AIXBT": {
     "entry_time": "2025-12-27T17:33:02.833704",
     "entry_price": 0.035254,
     "entry_volume": 667242.5079609999,
-    "current_price": 0.033614,
-    "current_volume": 766064.9485170001,
+    "current_price": 0.033381,
+    "current_volume": 768754.513367,
     "max_price": 0.035254,
-    "min_price": 0.033614,
+    "min_price": 0.033381,
     "in_top6": true
   },
   "TST": {
     "entry_time": "2025-12-27T17:33:02.833704",
     "entry_price": 0.019493,
     "entry_volume": 504123.326508,
-    "current_price": 0.019496,
-    "current_volume": 519053.4578649999,
+    "current_price": 0.019443,
+    "current_volume": 519235.6441719999,
     "max_price": 0.019496,
-    "min_price": 0.019493,
+    "min_price": 0.019443,
     "in_top6": true
   },
   "STABLE": {
     "entry_time": "2025-12-27T17:43:28.573236",
     "entry_price": 0.013538,
     "entry_volume": 2353952.753538999,
-    "current_price": 0.013538,
-    "current_volume": 2353952.753538999,
-    "max_price": 0.013538,
+    "current_price": 0.013622,
+    "current_volume": 2360576.418291999,
+    "max_price": 0.013622,
     "min_price": 0.013538,
+    "in_top6": true
+  },
+  "TON": {
+    "entry_time": "2025-12-27T17:49:43.501677",
+    "entry_price": 1.6036,
+    "entry_volume": 1211919.77516,
+    "current_price": 1.6036,
+    "current_volume": 1211919.77516,
+    "max_price": 1.6036,
+    "min_price": 1.6036,
     "in_top6": true
   }
 }

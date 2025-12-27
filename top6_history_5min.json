@@ -3391,5 +3391,34 @@
       }
     ],
     "timestamp": "2025-12-27T17:43:29.141019"
+  },
+  "2025-12-27_17-49": {
+    "tokens": [
+      {
+        "token": "STBL",
+        "score": 184
+      },
+      {
+        "token": "S",
+        "score": 182
+      },
+      {
+        "token": "AIXBT",
+        "score": 180
+      },
+      {
+        "token": "TST",
+        "score": 178
+      },
+      {
+        "token": "STABLE",
+        "score": 176
+      },
+      {
+        "token": "TON",
+        "score": 173
+      }
+    ],
+    "timestamp": "2025-12-27T17:49:44.202346"
   }
 }
