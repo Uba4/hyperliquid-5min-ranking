@@ -1825,5 +1825,34 @@
       }
     ],
     "timestamp": "2025-12-27T06:01:46.552320"
+  },
+  "2025-12-27_06-33": {
+    "tokens": [
+      {
+        "token": "FOGO",
+        "score": 200
+      },
+      {
+        "token": "XPL",
+        "score": 198
+      },
+      {
+        "token": "VVV",
+        "score": 196
+      },
+      {
+        "token": "STABLE",
+        "score": 194
+      },
+      {
+        "token": "JUP",
+        "score": 190
+      },
+      {
+        "token": "ZEREBRO",
+        "score": 188
+      }
+    ],
+    "timestamp": "2025-12-27T06:33:57.173243"
   }
 }
