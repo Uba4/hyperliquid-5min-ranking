@@ -2637,5 +2637,34 @@
       }
     ],
     "timestamp": "2025-12-27T11:50:31.520262"
+  },
+  "2025-12-27_11-55": {
+    "tokens": [
+      {
+        "token": "ZEN",
+        "score": 204
+      },
+      {
+        "token": "ZEC",
+        "score": 202
+      },
+      {
+        "token": "FOGO",
+        "score": 200
+      },
+      {
+        "token": "ZEREBRO",
+        "score": 198
+      },
+      {
+        "token": "STABLE",
+        "score": 196
+      },
+      {
+        "token": "STRK",
+        "score": 194
+      }
+    ],
+    "timestamp": "2025-12-27T11:55:54.289336"
   }
 }

@@ -1,10 +1,10 @@
 {
   "tokens": [
-    "ZEC",
     "ZEN",
+    "ZEC",
     "FOGO",
-    "STABLE",
     "ZEREBRO",
+    "STABLE",
     "STRK"
   ],
   "scores": [
@@ -15,5 +15,5 @@
     196,
     194
   ],
-  "timestamp": "2025-12-27T11:50:31.522467"
+  "timestamp": "2025-12-27T11:55:54.291740"
 }
