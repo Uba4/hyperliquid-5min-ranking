@@ -1,7 +1,7 @@
 """
 Hyperliquid Token Relative Strength Ranking System - 5-MINUTE TIMEFRAME
-With Telegram Notifications and Performance Tracking
-Tracks entry/exit prices, time in Top 6, and max movements for backtesting
+With Telegram Notifications, Performance Tracking, and Volume Analysis
+Tracks entry/exit prices, time in Top 6, max movements, and volume changes for backtesting
 """
 
 import requests
@@ -22,7 +22,7 @@ SIGNAL_LINE = 50
 LOOKBACK_PERIODS = 200  # 200 five-minute candles (~16-17 hours of data)
 RESULTS_FILE = "top6_history_5min.json"
 LAST_TOP6_FILE = "last_top6_5min.json"
-TRACKING_FILE = "token_tracking_5min.json"  # New: Performance tracking
+TRACKING_FILE = "token_tracking_5min.json"
 MAX_HISTORY_ENTRIES = 288  # Keep 24 hours of 5-min snapshots
 
 # Telegram configuration (loaded from environment variables)
@@ -211,10 +211,11 @@ def save_tracking_data(tracking: Dict):
     except Exception as e:
         print(f"❌ Error saving tracking data: {e}")
 
-def update_tracking(current_top6: List[Tuple[str, int]], data_cache: Dict, tracking: Dict) -> Dict:
+def update_tracking(current_top6: List[Tuple[str, int]], data_cache: Dict, tracking: Dict, volume_data: Dict) -> Dict:
     """
     Update tracking data for tokens in Top 6
     Tracks entry, updates max/min, and handles exits
+    Now includes volume tracking for backtesting
     """
     now = datetime.utcnow().isoformat()
     current_tokens = [token for token, score in current_top6]
@@ -223,21 +224,25 @@ def update_tracking(current_top6: List[Tuple[str, int]], data_cache: Dict, track
     for token, score in current_top6:
         if token in data_cache and not data_cache[token].empty:
             current_price = float(data_cache[token]['close'].iloc[-1])
+            current_volume = volume_data.get(token, 0)
             
             if token not in tracking:
                 # New entry to Top 6
                 tracking[token] = {
                     "entry_time": now,
                     "entry_price": current_price,
+                    "entry_volume": current_volume,
                     "current_price": current_price,
+                    "current_volume": current_volume,
                     "max_price": current_price,
                     "min_price": current_price,
                     "in_top6": True
                 }
-                print(f"📊 Started tracking {token} @ ${current_price:.4g}")
+                print(f"📊 Started tracking {token} @ ${current_price:.4g} | Vol: ${current_volume:,.0f}")
             else:
                 # Update existing tracking
                 tracking[token]["current_price"] = current_price
+                tracking[token]["current_volume"] = current_volume
                 tracking[token]["max_price"] = max(tracking[token]["max_price"], current_price)
                 tracking[token]["min_price"] = min(tracking[token]["min_price"], current_price)
                 tracking[token]["in_top6"] = True
@@ -249,6 +254,7 @@ def update_tracking(current_top6: List[Tuple[str, int]], data_cache: Dict, track
             tracking[token]["exit_time"] = now
             if token in data_cache and not data_cache[token].empty:
                 tracking[token]["exit_price"] = float(data_cache[token]['close'].iloc[-1])
+            tracking[token]["exit_volume"] = volume_data.get(token, 0)
             print(f"📊 {token} exited Top 6")
     
     return tracking
@@ -265,6 +271,8 @@ def calculate_performance_stats(token: str, tracking_data: Dict) -> Dict:
     min_price = data.get("min_price", entry_price)
     entry_time = data.get("entry_time", "")
     exit_time = data.get("exit_time", "")
+    entry_volume = data.get("entry_volume", 0)
+    exit_volume = data.get("exit_volume", 0)
     
     if entry_price == 0:
         return None
@@ -273,6 +281,11 @@ def calculate_performance_stats(token: str, tracking_data: Dict) -> Dict:
     net_move_pct = ((exit_price - entry_price) / entry_price) * 100
     max_upward_pct = ((max_price - entry_price) / entry_price) * 100
     max_downward_pct = ((min_price - entry_price) / entry_price) * 100
+    
+    # Calculate volume change
+    volume_change_pct = 0
+    if entry_volume > 0:
+        volume_change_pct = ((exit_volume - entry_volume) / entry_volume) * 100
     
     # Calculate time spent
     try:
@@ -296,8 +309,11 @@ def calculate_performance_stats(token: str, tracking_data: Dict) -> Dict:
     return {
         "entry_price": entry_price,
         "entry_time": entry_time,
+        "entry_volume": entry_volume,
         "exit_price": exit_price,
         "exit_time": exit_time,
+        "exit_volume": exit_volume,
+        "volume_change_pct": volume_change_pct,
         "net_move_pct": net_move_pct,
         "max_upward_pct": max_upward_pct,
         "max_upward_price": max_price,
@@ -388,21 +404,32 @@ def detect_changes(previous: Optional[Dict], current: List[Tuple[str, int]]) -> 
     
     return changes
 
-def format_telegram_notification(changes: Dict, current: List[Tuple[str, int]], previous: Dict, data_cache: Dict, tracking: Dict) -> str:
-    """Format changes into a clean notification with performance tracking"""
+def format_volume(volume: float) -> str:
+    """Format volume in a readable way (M/K)"""
+    if volume >= 1_000_000:
+        return f"${volume/1_000_000:.2f}M"
+    elif volume >= 1_000:
+        return f"${volume/1_000:.1f}K"
+    else:
+        return f"${volume:.0f}"
+
+def format_telegram_notification(changes: Dict, current: List[Tuple[str, int]], previous: Dict, data_cache: Dict, tracking: Dict, volume_data: Dict) -> str:
+    """Format changes into a clean notification with performance tracking and volume analysis"""
     timestamp = datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')
     
     message = f"⚡ <b>5-MIN TOP 6 CHANGE</b>\n"
     message += f"⏰ Time: {timestamp}\n\n"
     
-    # New entries with prices
+    # New entries with prices AND VOLUME
     if changes.get("new_entries"):
         for token in changes["new_entries"]:
             if token in data_cache and not data_cache[token].empty:
                 price = data_cache[token]['close'].iloc[-1]
-                message += f"📈 <b>New Entry:</b> {token} (${price:,.4g})\n\n"
+                volume = volume_data.get(token, 0)
+                vol_str = format_volume(volume)
+                message += f"📈 <b>New Entry:</b> {token} (${price:,.4g}) | 24h Vol: {vol_str}\n\n"
     
-    # Dropped out with performance stats
+    # Dropped out with performance stats AND VOLUME DATA
     if changes.get("dropped_out"):
         for token in changes["dropped_out"]:
             stats = calculate_performance_stats(token, tracking)
@@ -410,10 +437,13 @@ def format_telegram_notification(changes: Dict, current: List[Tuple[str, int]], 
                 entry_time_short = stats['entry_time'][:16].replace('T', ' ')
                 exit_time_short = stats['exit_time'][:16].replace('T', ' ')
                 
+                entry_vol_str = format_volume(stats['entry_volume'])
+                exit_vol_str = format_volume(stats['exit_volume'])
+                
                 message += f"📉 <b>Dropped Out:</b> {token}\n"
-                message += f"   Entry: ${stats['entry_price']:,.4g} @ {entry_time_short}\n"
-                message += f"   Exit: ${stats['exit_price']:,.4g} @ {exit_time_short}\n"
-                message += f"   Net Move: {stats['net_move_pct']:+.2f}%\n"
+                message += f"   Entry: ${stats['entry_price']:,.4g} @ {entry_time_short} | Vol: {entry_vol_str}\n"
+                message += f"   Exit: ${stats['exit_price']:,.4g} @ {exit_time_short} | Vol: {exit_vol_str}\n"
+                message += f"   Net Move: {stats['net_move_pct']:+.2f}% | Vol Change: {stats['volume_change_pct']:+.1f}%\n"
                 message += f"   Time in Top 6: {stats['time_in_top6']}\n"
                 message += f"   Max Upward: +{stats['max_upward_pct']:.2f}% (${stats['max_upward_price']:,.4g})\n"
                 message += f"   Max Downward: {stats['max_downward_pct']:+.2f}% (${stats['max_downward_price']:,.4g})\n\n"
@@ -571,9 +601,9 @@ def main():
     # Step 6: Display results
     display_results(top6, volume_data)
     
-    # Step 7: Update tracking data
+    # Step 7: Update tracking data (NOW WITH VOLUME)
     print("\n📊 Step 7: Updating performance tracking...")
-    tracking = update_tracking(top6, data_cache, tracking)
+    tracking = update_tracking(top6, data_cache, tracking, volume_data)
     save_tracking_data(tracking)
     
     # Step 8: Detect changes and send notification
@@ -597,7 +627,7 @@ def main():
     
     if changes:
         print("🔔 Changes detected! Sending Telegram notification...")
-        message = format_telegram_notification(changes, top6, previous_top6, data_cache, tracking)
+        message = format_telegram_notification(changes, top6, previous_top6, data_cache, tracking, volume_data)
         send_telegram_message(message)
         
         # Clean up tracking for tokens that exited
@@ -619,3 +649,21 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
+
+---
+
+This complete script now includes:
+- ✅ **Volume tracking** on entry and exit
+- ✅ **Volume change %** calculation
+- ✅ **Formatted volume display** (M/K notation)
+- ✅ **All original features** (performance stats, time tracking, etc.)
+
+The Telegram notification will now show:
+```
+📈 New Entry: SPX ($0.5124) | 24h Vol: $1.2M
+
+📉 Dropped Out: 0G
+   Entry: $0.9978 @ 2025-12-27 13:38 | Vol: $850K
+   Exit: $1.005 @ 2025-12-27 15:30 | Vol: $1.1M
+   Net Move: +0.76% | Vol Change: +29.4%
