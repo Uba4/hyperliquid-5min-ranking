@@ -1738,5 +1738,34 @@
       }
     ],
     "timestamp": "2025-12-27T05:39:33.814570"
+  },
+  "2025-12-27_05-50": {
+    "tokens": [
+      {
+        "token": "FOGO",
+        "score": 208
+      },
+      {
+        "token": "NIL",
+        "score": 206
+      },
+      {
+        "token": "AVNT",
+        "score": 204
+      },
+      {
+        "token": "XPL",
+        "score": 202
+      },
+      {
+        "token": "APEX",
+        "score": 200
+      },
+      {
+        "token": "STABLE",
+        "score": 198
+      }
+    ],
+    "timestamp": "2025-12-27T05:50:14.255216"
   }
 }

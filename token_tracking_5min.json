@@ -1,16 +1,8 @@
 {
-  "BANANA": {
-    "entry_time": "2025-12-27T04:18:53.467608",
-    "entry_price": 7.694,
-    "current_price": 7.7163,
-    "max_price": 7.7506,
-    "min_price": 7.694,
-    "in_top6": true
-  },
   "AVNT": {
     "entry_time": "2025-12-27T04:18:53.467608",
     "entry_price": 0.39581,
-    "current_price": 0.40081,
+    "current_price": 0.40261,
     "max_price": 0.40567,
     "min_price": 0.39581,
     "in_top6": true
@@ -18,15 +10,15 @@
   "FOGO": {
     "entry_time": "2025-12-27T04:47:18.969906",
     "entry_price": 0.24,
-    "current_price": 0.255,
+    "current_price": 0.235,
     "max_price": 0.255,
-    "min_price": 0.24,
+    "min_price": 0.235,
     "in_top6": true
   },
   "NIL": {
     "entry_time": "2025-12-27T04:59:27.959686",
     "entry_price": 0.082618,
-    "current_price": 0.081768,
+    "current_price": 0.081963,
     "max_price": 0.082618,
     "min_price": 0.081768,
     "in_top6": true
@@ -34,17 +26,25 @@
   "XPL": {
     "entry_time": "2025-12-27T05:39:33.446372",
     "entry_price": 0.14567,
-    "current_price": 0.14567,
-    "max_price": 0.14567,
+    "current_price": 0.14652,
+    "max_price": 0.14652,
     "min_price": 0.14567,
     "in_top6": true
   },
   "APEX": {
     "entry_time": "2025-12-27T05:39:33.446372",
     "entry_price": 0.48619,
-    "current_price": 0.48619,
+    "current_price": 0.48249,
     "max_price": 0.48619,
-    "min_price": 0.48619,
+    "min_price": 0.48249,
+    "in_top6": true
+  },
+  "STABLE": {
+    "entry_time": "2025-12-27T05:50:13.681016",
+    "entry_price": 0.012527,
+    "current_price": 0.012527,
+    "max_price": 0.012527,
+    "min_price": 0.012527,
     "in_top6": true
   }
 }
