@@ -3275,5 +3275,34 @@
       }
     ],
     "timestamp": "2025-12-27T16:54:35.463733"
+  },
+  "2025-12-27_17-00": {
+    "tokens": [
+      {
+        "token": "STBL",
+        "score": 186
+      },
+      {
+        "token": "APEX",
+        "score": 184
+      },
+      {
+        "token": "LIT",
+        "score": 182
+      },
+      {
+        "token": "AVNT",
+        "score": 180
+      },
+      {
+        "token": "S",
+        "score": 178
+      },
+      {
+        "token": "STABLE",
+        "score": 176
+      }
+    ],
+    "timestamp": "2025-12-27T17:00:47.705241"
   }
 }
