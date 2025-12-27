@@ -2463,5 +2463,34 @@
       }
     ],
     "timestamp": "2025-12-27T10:55:21.382923"
+  },
+  "2025-12-27_11-00": {
+    "tokens": [
+      {
+        "token": "ZEC",
+        "score": 202
+      },
+      {
+        "token": "ZEN",
+        "score": 200
+      },
+      {
+        "token": "STABLE",
+        "score": 198
+      },
+      {
+        "token": "FOGO",
+        "score": 196
+      },
+      {
+        "token": "WLFI",
+        "score": 194
+      },
+      {
+        "token": "XPL",
+        "score": 192
+      }
+    ],
+    "timestamp": "2025-12-27T11:00:42.336043"
   }
 }
