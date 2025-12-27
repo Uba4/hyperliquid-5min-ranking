@@ -2,7 +2,7 @@
   "CC": {
     "entry_time": "2025-12-27T12:40:02.762311",
     "entry_price": 0.10615,
-    "current_price": 0.11051,
+    "current_price": 0.1097,
     "max_price": 0.11051,
     "min_price": 0.10615,
     "in_top6": true
@@ -10,41 +10,41 @@
   "APEX": {
     "entry_time": "2025-12-27T13:10:28.172983",
     "entry_price": 0.50315,
-    "current_price": 0.51192,
-    "max_price": 0.51192,
+    "current_price": 0.5129,
+    "max_price": 0.5129,
     "min_price": 0.50315,
     "in_top6": true
   },
   "MERL": {
     "entry_time": "2025-12-27T13:38:03.958253",
     "entry_price": 0.41313,
-    "current_price": 0.41465,
-    "max_price": 0.41465,
+    "current_price": 0.4187,
+    "max_price": 0.4187,
     "min_price": 0.41313,
     "in_top6": true
   },
   "0G": {
     "entry_time": "2025-12-27T13:38:03.958253",
     "entry_price": 0.9978,
-    "current_price": 1.0065,
-    "max_price": 1.0084,
+    "current_price": 1.0116,
+    "max_price": 1.0116,
     "min_price": 0.99712,
     "in_top6": true
   },
   "STABLE": {
     "entry_time": "2025-12-27T14:00:04.594000",
     "entry_price": 0.013014,
-    "current_price": 0.013009,
-    "max_price": 0.013014,
+    "current_price": 0.013187,
+    "max_price": 0.013187,
     "min_price": 0.013009,
     "in_top6": true
   },
   "BCH": {
     "entry_time": "2025-12-27T14:17:36.282542",
     "entry_price": 617.82,
-    "current_price": 617.82,
+    "current_price": 616.87,
     "max_price": 617.82,
-    "min_price": 617.82,
+    "min_price": 616.87,
     "in_top6": true
   }
 }
