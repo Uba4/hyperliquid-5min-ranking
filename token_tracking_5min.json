@@ -2,56 +2,57 @@
   "CC": {
     "entry_time": "2025-12-27T12:40:02.762311",
     "entry_price": 0.10615,
-    "current_price": 0.11289,
+    "current_price": 0.11319,
     "max_price": 0.11415,
     "min_price": 0.10615,
     "in_top6": true,
-    "current_volume": 1280004.3109870001
+    "current_volume": 1315698.811443
   },
   "APEX": {
     "entry_time": "2025-12-27T13:10:28.172983",
     "entry_price": 0.50315,
-    "current_price": 0.53834,
+    "current_price": 0.53622,
     "max_price": 0.53834,
     "min_price": 0.50315,
     "in_top6": true,
-    "current_volume": 1501975.9026100002
-  },
-  "SPX": {
-    "entry_time": "2025-12-27T15:30:29.370787",
-    "entry_price": 0.51237,
-    "current_price": 0.50924,
-    "max_price": 0.51237,
-    "min_price": 0.50838,
-    "in_top6": true,
-    "current_volume": 940216.8647140003
+    "current_volume": 1385872.9083200002
   },
   "ZK": {
     "entry_time": "2025-12-27T15:40:52.452659",
     "entry_price": 0.032553,
-    "current_price": 0.032662,
-    "max_price": 0.032698,
+    "current_price": 0.032789,
+    "max_price": 0.032789,
     "min_price": 0.032553,
     "in_top6": true,
-    "current_volume": 325761.4380459999
+    "current_volume": 332192.1929549999
   },
   "AVNT": {
     "entry_time": "2025-12-27T15:48:07.484551",
     "entry_price": 0.39658,
-    "current_price": 0.40587,
+    "current_price": 0.39636,
     "max_price": 0.40587,
-    "min_price": 0.39655,
+    "min_price": 0.39636,
     "in_top6": true,
-    "current_volume": 5552464.360570001
+    "current_volume": 5565405.578930003
   },
   "STBL": {
     "entry_time": "2025-12-27T16:08:54.174196",
     "entry_price": 0.048798,
     "entry_volume": 1181255.023878,
-    "current_price": 0.048798,
-    "current_volume": 1181255.023878,
-    "max_price": 0.048798,
+    "current_price": 0.049254,
+    "current_volume": 1210612.7731099993,
+    "max_price": 0.049254,
     "min_price": 0.048798,
+    "in_top6": true
+  },
+  "SEI": {
+    "entry_time": "2025-12-27T16:22:11.929808",
+    "entry_price": 0.11429,
+    "entry_volume": 1404966.2224299998,
+    "current_price": 0.11429,
+    "current_volume": 1404966.2224299998,
+    "max_price": 0.11429,
+    "min_price": 0.11429,
     "in_top6": true
   }
 }
