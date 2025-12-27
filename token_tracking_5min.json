@@ -1,16 +1,8 @@
 {
-  "KAITO": {
-    "entry_time": "2025-12-27T00:44:22.481884",
-    "entry_price": 0.57495,
-    "current_price": 0.59557,
-    "max_price": 0.60884,
-    "min_price": 0.57495,
-    "in_top6": true
-  },
   "INIT": {
     "entry_time": "2025-12-27T02:29:50.056429",
     "entry_price": 0.10166,
-    "current_price": 0.10453,
+    "current_price": 0.10262,
     "max_price": 0.10453,
     "min_price": 0.10166,
     "in_top6": true
@@ -18,33 +10,41 @@
   "BANANA": {
     "entry_time": "2025-12-27T04:18:53.467608",
     "entry_price": 7.694,
-    "current_price": 7.694,
-    "max_price": 7.694,
+    "current_price": 7.7455,
+    "max_price": 7.7455,
     "min_price": 7.694,
     "in_top6": true
   },
   "IP": {
     "entry_time": "2025-12-27T04:18:53.467608",
     "entry_price": 1.5061,
-    "current_price": 1.5061,
-    "max_price": 1.5061,
+    "current_price": 1.5128,
+    "max_price": 1.5128,
     "min_price": 1.5061,
     "in_top6": true
   },
   "AVNT": {
     "entry_time": "2025-12-27T04:18:53.467608",
     "entry_price": 0.39581,
-    "current_price": 0.39581,
-    "max_price": 0.39581,
+    "current_price": 0.40567,
+    "max_price": 0.40567,
     "min_price": 0.39581,
     "in_top6": true
   },
-  "MET": {
-    "entry_time": "2025-12-27T04:18:53.467608",
-    "entry_price": 0.25509,
-    "current_price": 0.25509,
-    "max_price": 0.25509,
-    "min_price": 0.25509,
+  "FOGO": {
+    "entry_time": "2025-12-27T04:47:18.969906",
+    "entry_price": 0.24,
+    "current_price": 0.24,
+    "max_price": 0.24,
+    "min_price": 0.24,
+    "in_top6": true
+  },
+  "ACE": {
+    "entry_time": "2025-12-27T04:47:18.969906",
+    "entry_price": 0.2805,
+    "current_price": 0.2805,
+    "max_price": 0.2805,
+    "min_price": 0.2805,
     "in_top6": true
   }
 }
