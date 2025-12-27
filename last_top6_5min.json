@@ -1,19 +1,19 @@
 {
   "tokens": [
     "AVNT",
-    "FARTCOIN",
     "AIXBT",
+    "TNSR",
+    "FARTCOIN",
     "KAITO",
-    "ZEREBRO",
-    "TNSR"
+    "SPX"
   ],
   "scores": [
     200,
     198,
-    196,
     194,
-    192,
+    194,
+    194,
     190
   ],
-  "timestamp": "2025-12-27T07:34:31.552500"
+  "timestamp": "2025-12-27T07:43:16.921738"
 }
