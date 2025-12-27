@@ -3536,5 +3536,34 @@
       }
     ],
     "timestamp": "2025-12-27T18:50:22.669615"
+  },
+  "2025-12-27_18-59": {
+    "tokens": [
+      {
+        "token": "STABLE",
+        "score": 182
+      },
+      {
+        "token": "S",
+        "score": 180
+      },
+      {
+        "token": "FOGO",
+        "score": 178
+      },
+      {
+        "token": "CRV",
+        "score": 176
+      },
+      {
+        "token": "XPL",
+        "score": 174
+      },
+      {
+        "token": "DOT",
+        "score": 172
+      }
+    ],
+    "timestamp": "2025-12-27T18:59:02.083782"
   }
 }
