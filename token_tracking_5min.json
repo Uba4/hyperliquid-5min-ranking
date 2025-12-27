@@ -1,50 +1,50 @@
 {
-  "AVNT": {
-    "entry_time": "2025-12-26T22:35:24.310152",
-    "entry_price": 0.37461,
-    "current_price": 0.41054,
-    "max_price": 0.41054,
-    "min_price": 0.37461,
-    "in_top6": true
-  },
-  "BANANA": {
-    "entry_time": "2025-12-26T23:50:52.366280",
-    "entry_price": 7.2499,
-    "current_price": 7.3751,
-    "max_price": 7.3751,
-    "min_price": 7.2499,
-    "in_top6": true
-  },
   "KAITO": {
     "entry_time": "2025-12-27T00:44:22.481884",
     "entry_price": 0.57495,
-    "current_price": 0.57495,
-    "max_price": 0.57495,
+    "current_price": 0.59199,
+    "max_price": 0.59199,
     "min_price": 0.57495,
     "in_top6": true
   },
-  "0G": {
-    "entry_time": "2025-12-27T00:44:22.481884",
-    "entry_price": 1.0077,
-    "current_price": 1.0077,
-    "max_price": 1.0077,
-    "min_price": 1.0077,
+  "AIXBT": {
+    "entry_time": "2025-12-27T02:29:50.056429",
+    "entry_price": 0.032115,
+    "current_price": 0.032115,
+    "max_price": 0.032115,
+    "min_price": 0.032115,
     "in_top6": true
   },
-  "MOVE": {
-    "entry_time": "2025-12-27T00:44:22.481884",
-    "entry_price": 0.036709,
-    "current_price": 0.036709,
-    "max_price": 0.036709,
-    "min_price": 0.036709,
+  "INIT": {
+    "entry_time": "2025-12-27T02:29:50.056429",
+    "entry_price": 0.10166,
+    "current_price": 0.10166,
+    "max_price": 0.10166,
+    "min_price": 0.10166,
     "in_top6": true
   },
-  "WLFI": {
-    "entry_time": "2025-12-27T00:44:22.481884",
-    "entry_price": 0.14535,
-    "current_price": 0.14535,
-    "max_price": 0.14535,
-    "min_price": 0.14535,
+  "SKY": {
+    "entry_time": "2025-12-27T02:29:50.056429",
+    "entry_price": 0.06244,
+    "current_price": 0.06244,
+    "max_price": 0.06244,
+    "min_price": 0.06244,
+    "in_top6": true
+  },
+  "ZEC": {
+    "entry_time": "2025-12-27T02:29:50.056429",
+    "entry_price": 464.06,
+    "current_price": 464.06,
+    "max_price": 464.06,
+    "min_price": 464.06,
+    "in_top6": true
+  },
+  "PUMP": {
+    "entry_time": "2025-12-27T02:29:50.056429",
+    "entry_price": 0.00185,
+    "current_price": 0.00185,
+    "max_price": 0.00185,
+    "min_price": 0.00185,
     "in_top6": true
   }
 }

@@ -1535,5 +1535,34 @@
       }
     ],
     "timestamp": "2025-12-27T00:44:23.052872"
+  },
+  "2025-12-27_02-29": {
+    "tokens": [
+      {
+        "token": "AIXBT",
+        "score": 204
+      },
+      {
+        "token": "INIT",
+        "score": 202
+      },
+      {
+        "token": "SKY",
+        "score": 199
+      },
+      {
+        "token": "ZEC",
+        "score": 199
+      },
+      {
+        "token": "PUMP",
+        "score": 196
+      },
+      {
+        "token": "KAITO",
+        "score": 194
+      }
+    ],
+    "timestamp": "2025-12-27T02:29:50.434213"
   }
 }
