@@ -2,58 +2,59 @@
   "APEX": {
     "entry_time": "2025-12-27T13:10:28.172983",
     "entry_price": 0.50315,
-    "current_price": 0.53669,
+    "current_price": 0.53646,
     "max_price": 0.53834,
     "min_price": 0.50315,
     "in_top6": true,
-    "current_volume": 1437459.6651599994
-  },
-  "ZK": {
-    "entry_time": "2025-12-27T15:40:52.452659",
-    "entry_price": 0.032553,
-    "current_price": 0.032347,
-    "max_price": 0.032789,
-    "min_price": 0.032347,
-    "in_top6": true,
-    "current_volume": 363699.3912369999
+    "current_volume": 1479006.2929600002
   },
   "AVNT": {
     "entry_time": "2025-12-27T15:48:07.484551",
     "entry_price": 0.39658,
-    "current_price": 0.39405,
+    "current_price": 0.39739,
     "max_price": 0.40587,
     "min_price": 0.39405,
     "in_top6": true,
-    "current_volume": 5561084.766069999
+    "current_volume": 5564439.1964799985
   },
   "STBL": {
     "entry_time": "2025-12-27T16:08:54.174196",
     "entry_price": 0.048798,
     "entry_volume": 1181255.023878,
-    "current_price": 0.04933,
-    "current_volume": 1288739.9414020004,
-    "max_price": 0.04933,
+    "current_price": 0.049632,
+    "current_volume": 1297556.6168280002,
+    "max_price": 0.049632,
     "min_price": 0.048798,
-    "in_top6": true
-  },
-  "SEI": {
-    "entry_time": "2025-12-27T16:22:11.929808",
-    "entry_price": 0.11429,
-    "entry_volume": 1404966.2224299998,
-    "current_price": 0.1148,
-    "current_volume": 1447377.4120900002,
-    "max_price": 0.1148,
-    "min_price": 0.11429,
     "in_top6": true
   },
   "DOT": {
     "entry_time": "2025-12-27T16:43:40.886489",
     "entry_price": 1.8079,
     "entry_volume": 1496091.9449500006,
-    "current_price": 1.8079,
-    "current_volume": 1496091.9449500006,
-    "max_price": 1.8079,
+    "current_price": 1.8084,
+    "current_volume": 1500527.9549600005,
+    "max_price": 1.8084,
     "min_price": 1.8079,
+    "in_top6": true
+  },
+  "S": {
+    "entry_time": "2025-12-27T16:54:34.942390",
+    "entry_price": 0.076049,
+    "entry_volume": 501976.5154300003,
+    "current_price": 0.076049,
+    "current_volume": 501976.5154300003,
+    "max_price": 0.076049,
+    "min_price": 0.076049,
+    "in_top6": true
+  },
+  "LIT": {
+    "entry_time": "2025-12-27T16:54:34.942390",
+    "entry_price": 3.4731,
+    "entry_volume": 7639121.1227,
+    "current_price": 3.4731,
+    "current_volume": 7639121.1227,
+    "max_price": 3.4731,
+    "min_price": 3.4731,
     "in_top6": true
   }
 }
