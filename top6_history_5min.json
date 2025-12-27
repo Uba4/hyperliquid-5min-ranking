@@ -2173,5 +2173,34 @@
       }
     ],
     "timestamp": "2025-12-27T08:57:47.745319"
+  },
+  "2025-12-27_09-14": {
+    "tokens": [
+      {
+        "token": "CC",
+        "score": 202
+      },
+      {
+        "token": "2Z",
+        "score": 200
+      },
+      {
+        "token": "STABLE",
+        "score": 198
+      },
+      {
+        "token": "LDO",
+        "score": 194
+      },
+      {
+        "token": "APEX",
+        "score": 194
+      },
+      {
+        "token": "HYPE",
+        "score": 192
+      }
+    ],
+    "timestamp": "2025-12-27T09:14:22.521058"
   }
 }
