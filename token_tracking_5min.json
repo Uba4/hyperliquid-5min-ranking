@@ -3,8 +3,8 @@
     "entry_time": "2025-12-27T16:08:54.174196",
     "entry_price": 0.048798,
     "entry_volume": 1181255.023878,
-    "current_price": 0.051421,
-    "current_volume": 1332806.4848240002,
+    "current_price": 0.051296,
+    "current_volume": 1332378.8267960004,
     "max_price": 0.051421,
     "min_price": 0.048798,
     "in_top6": true
@@ -13,20 +13,10 @@
     "entry_time": "2025-12-27T16:54:34.942390",
     "entry_price": 0.076049,
     "entry_volume": 501976.5154300003,
-    "current_price": 0.076274,
-    "current_volume": 482731.335047,
-    "max_price": 0.076274,
+    "current_price": 0.077192,
+    "current_volume": 482281.6385179998,
+    "max_price": 0.077192,
     "min_price": 0.07557,
-    "in_top6": true
-  },
-  "LIT": {
-    "entry_time": "2025-12-27T16:54:34.942390",
-    "entry_price": 3.4731,
-    "entry_volume": 7639121.1227,
-    "current_price": 3.4224,
-    "current_volume": 7169768.635000003,
-    "max_price": 3.4731,
-    "min_price": 3.4224,
     "in_top6": true
   },
   "FOGO": {
@@ -43,20 +33,30 @@
     "entry_time": "2025-12-27T17:33:02.833704",
     "entry_price": 0.035254,
     "entry_volume": 667242.5079609999,
-    "current_price": 0.035254,
-    "current_volume": 667242.5079609999,
+    "current_price": 0.033614,
+    "current_volume": 766064.9485170001,
     "max_price": 0.035254,
-    "min_price": 0.035254,
+    "min_price": 0.033614,
     "in_top6": true
   },
   "TST": {
     "entry_time": "2025-12-27T17:33:02.833704",
     "entry_price": 0.019493,
     "entry_volume": 504123.326508,
-    "current_price": 0.019493,
-    "current_volume": 504123.326508,
-    "max_price": 0.019493,
+    "current_price": 0.019496,
+    "current_volume": 519053.4578649999,
+    "max_price": 0.019496,
     "min_price": 0.019493,
+    "in_top6": true
+  },
+  "STABLE": {
+    "entry_time": "2025-12-27T17:43:28.573236",
+    "entry_price": 0.013538,
+    "entry_volume": 2353952.753538999,
+    "current_price": 0.013538,
+    "current_volume": 2353952.753538999,
+    "max_price": 0.013538,
+    "min_price": 0.013538,
     "in_top6": true
   }
 }
