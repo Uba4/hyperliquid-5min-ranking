@@ -2,10 +2,10 @@
   "tokens": [
     "ZEC",
     "ZEN",
-    "STABLE",
     "FOGO",
+    "STABLE",
     "ZEREBRO",
-    "ICP"
+    "STRK"
   ],
   "scores": [
     204,
@@ -15,5 +15,5 @@
     196,
     194
   ],
-  "timestamp": "2025-12-27T11:37:19.393036"
+  "timestamp": "2025-12-27T11:44:31.100802"
 }
