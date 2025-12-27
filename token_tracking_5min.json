@@ -2,7 +2,7 @@
   "CC": {
     "entry_time": "2025-12-27T12:40:02.762311",
     "entry_price": 0.10615,
-    "current_price": 0.11415,
+    "current_price": 0.1126,
     "max_price": 0.11415,
     "min_price": 0.10615,
     "in_top6": true
@@ -10,7 +10,7 @@
   "APEX": {
     "entry_time": "2025-12-27T13:10:28.172983",
     "entry_price": 0.50315,
-    "current_price": 0.5374,
+    "current_price": 0.53655,
     "max_price": 0.5374,
     "min_price": 0.50315,
     "in_top6": true
@@ -18,7 +18,7 @@
   "SPX": {
     "entry_time": "2025-12-27T15:30:29.370787",
     "entry_price": 0.51237,
-    "current_price": 0.50838,
+    "current_price": 0.5092,
     "max_price": 0.51237,
     "min_price": 0.50838,
     "in_top6": true
@@ -26,7 +26,7 @@
   "ZEN": {
     "entry_time": "2025-12-27T15:30:29.370787",
     "entry_price": 9.3379,
-    "current_price": 9.4,
+    "current_price": 9.3518,
     "max_price": 9.4,
     "min_price": 9.3379,
     "in_top6": true
@@ -34,17 +34,17 @@
   "ZK": {
     "entry_time": "2025-12-27T15:40:52.452659",
     "entry_price": 0.032553,
-    "current_price": 0.032605,
-    "max_price": 0.032605,
+    "current_price": 0.032698,
+    "max_price": 0.032698,
     "min_price": 0.032553,
     "in_top6": true
   },
   "AVNT": {
     "entry_time": "2025-12-27T15:48:07.484551",
     "entry_price": 0.39658,
-    "current_price": 0.39658,
+    "current_price": 0.39655,
     "max_price": 0.39658,
-    "min_price": 0.39658,
+    "min_price": 0.39655,
     "in_top6": true
   }
 }
