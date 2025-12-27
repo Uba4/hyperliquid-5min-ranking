@@ -1,19 +1,19 @@
 {
   "tokens": [
-    "FOGO",
     "ZEREBRO",
     "FARTCOIN",
+    "AIXBT",
     "KAITO",
-    "XPL",
-    "PENDLE"
+    "PENDLE",
+    "IP"
   ],
   "scores": [
     200,
     198,
     196,
+    194,
     192,
-    192,
-    190
+    188
   ],
-  "timestamp": "2025-12-27T07:02:26.067601"
+  "timestamp": "2025-12-27T07:22:57.091187"
 }
