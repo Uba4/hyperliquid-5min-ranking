@@ -2,7 +2,7 @@
   "FARTCOIN": {
     "entry_time": "2025-12-27T06:55:16.334787",
     "entry_price": 0.30909,
-    "current_price": 0.30964,
+    "current_price": 0.30938,
     "max_price": 0.31215,
     "min_price": 0.30909,
     "in_top6": true
@@ -10,7 +10,7 @@
   "AIXBT": {
     "entry_time": "2025-12-27T07:22:56.711241",
     "entry_price": 0.032311,
-    "current_price": 0.032428,
+    "current_price": 0.032417,
     "max_price": 0.032452,
     "min_price": 0.032311,
     "in_top6": true
@@ -18,7 +18,7 @@
   "AVNT": {
     "entry_time": "2025-12-27T07:34:31.039293",
     "entry_price": 0.41104,
-    "current_price": 0.41324,
+    "current_price": 0.41423,
     "max_price": 0.4167,
     "min_price": 0.41104,
     "in_top6": true
@@ -26,24 +26,24 @@
   "TNSR": {
     "entry_time": "2025-12-27T07:34:31.039293",
     "entry_price": 0.08519,
-    "current_price": 0.08401,
+    "current_price": 0.08396,
     "max_price": 0.08519,
-    "min_price": 0.08401,
+    "min_price": 0.08396,
     "in_top6": true
   },
   "STBL": {
     "entry_time": "2025-12-27T07:49:11.111112",
     "entry_price": 0.043786,
-    "current_price": 0.043786,
-    "max_price": 0.043786,
+    "current_price": 0.043796,
+    "max_price": 0.043796,
     "min_price": 0.043786,
     "in_top6": true
   },
   "HEMI": {
     "entry_time": "2025-12-27T07:49:11.111112",
     "entry_price": 0.016026,
-    "current_price": 0.016026,
-    "max_price": 0.016026,
+    "current_price": 0.016064,
+    "max_price": 0.016064,
     "min_price": 0.016026,
     "in_top6": true
   }
