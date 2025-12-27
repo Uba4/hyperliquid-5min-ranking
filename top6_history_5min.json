@@ -2927,5 +2927,34 @@
       }
     ],
     "timestamp": "2025-12-27T14:34:47.967984"
+  },
+  "2025-12-27_14-45": {
+    "tokens": [
+      {
+        "token": "CC",
+        "score": 194
+      },
+      {
+        "token": "0G",
+        "score": 192
+      },
+      {
+        "token": "STABLE",
+        "score": 190
+      },
+      {
+        "token": "APEX",
+        "score": 188
+      },
+      {
+        "token": "MERL",
+        "score": 186
+      },
+      {
+        "token": "BCH",
+        "score": 184
+      }
+    ],
+    "timestamp": "2025-12-27T14:45:51.453690"
   }
 }
