@@ -3449,5 +3449,34 @@
       }
     ],
     "timestamp": "2025-12-27T17:55:56.014079"
+  },
+  "2025-12-27_18-01": {
+    "tokens": [
+      {
+        "token": "AIXBT",
+        "score": 184
+      },
+      {
+        "token": "STBL",
+        "score": 182
+      },
+      {
+        "token": "S",
+        "score": 180
+      },
+      {
+        "token": "STABLE",
+        "score": 178
+      },
+      {
+        "token": "TST",
+        "score": 176
+      },
+      {
+        "token": "ZEREBRO",
+        "score": 174
+      }
+    ],
+    "timestamp": "2025-12-27T18:01:11.908356"
   }
 }
