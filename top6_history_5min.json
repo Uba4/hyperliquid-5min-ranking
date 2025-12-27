@@ -3101,5 +3101,34 @@
       }
     ],
     "timestamp": "2025-12-27T15:40:53.026867"
+  },
+  "2025-12-27_15-48": {
+    "tokens": [
+      {
+        "token": "CC",
+        "score": 190
+      },
+      {
+        "token": "APEX",
+        "score": 188
+      },
+      {
+        "token": "ZK",
+        "score": 186
+      },
+      {
+        "token": "AVNT",
+        "score": 184
+      },
+      {
+        "token": "ZEN",
+        "score": 182
+      },
+      {
+        "token": "SPX",
+        "score": 180
+      }
+    ],
+    "timestamp": "2025-12-27T15:48:07.819816"
   }
 }
