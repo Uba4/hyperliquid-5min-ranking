@@ -2,49 +2,49 @@
   "ZEN": {
     "entry_time": "2025-12-27T10:40:16.344301",
     "entry_price": 8.3446,
-    "current_price": 9.1771,
+    "current_price": 9.1848,
     "max_price": 9.3878,
     "min_price": 8.3446,
-    "in_top6": true
-  },
-  "STRK": {
-    "entry_time": "2025-12-27T11:44:30.509522",
-    "entry_price": 0.08212,
-    "current_price": 0.08268,
-    "max_price": 0.083,
-    "min_price": 0.08212,
-    "in_top6": true
-  },
-  "STBL": {
-    "entry_time": "2025-12-27T12:01:02.063466",
-    "entry_price": 0.044629,
-    "current_price": 0.044639,
-    "max_price": 0.044639,
-    "min_price": 0.044553,
     "in_top6": true
   },
   "CC": {
     "entry_time": "2025-12-27T12:40:02.762311",
     "entry_price": 0.10615,
-    "current_price": 0.10648,
-    "max_price": 0.10648,
+    "current_price": 0.10823,
+    "max_price": 0.10823,
     "min_price": 0.10615,
     "in_top6": true
   },
   "APEX": {
     "entry_time": "2025-12-27T13:10:28.172983",
     "entry_price": 0.50315,
-    "current_price": 0.50315,
-    "max_price": 0.50315,
+    "current_price": 0.50341,
+    "max_price": 0.50341,
     "min_price": 0.50315,
     "in_top6": true
   },
-  "TAO": {
-    "entry_time": "2025-12-27T13:10:28.172983",
-    "entry_price": 221.58,
-    "current_price": 221.58,
-    "max_price": 221.58,
-    "min_price": 221.58,
+  "MERL": {
+    "entry_time": "2025-12-27T13:38:03.958253",
+    "entry_price": 0.41313,
+    "current_price": 0.41313,
+    "max_price": 0.41313,
+    "min_price": 0.41313,
+    "in_top6": true
+  },
+  "0G": {
+    "entry_time": "2025-12-27T13:38:03.958253",
+    "entry_price": 0.9978,
+    "current_price": 0.9978,
+    "max_price": 0.9978,
+    "min_price": 0.9978,
+    "in_top6": true
+  },
+  "ANIME": {
+    "entry_time": "2025-12-27T13:38:03.958253",
+    "entry_price": 0.007768,
+    "current_price": 0.007768,
+    "max_price": 0.007768,
+    "min_price": 0.007768,
     "in_top6": true
   }
 }
