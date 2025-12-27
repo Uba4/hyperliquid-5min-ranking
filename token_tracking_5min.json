@@ -2,7 +2,7 @@
   "CC": {
     "entry_time": "2025-12-27T08:26:56.440952",
     "entry_price": 0.10086,
-    "current_price": 0.10202,
+    "current_price": 0.1018,
     "max_price": 0.10202,
     "min_price": 0.10071,
     "in_top6": true
@@ -10,23 +10,23 @@
   "STABLE": {
     "entry_time": "2025-12-27T09:14:22.038473",
     "entry_price": 0.012906,
-    "current_price": 0.012953,
-    "max_price": 0.013008,
+    "current_price": 0.013009,
+    "max_price": 0.013009,
     "min_price": 0.012886,
     "in_top6": true
   },
   "VVV": {
     "entry_time": "2025-12-27T09:33:21.468726",
     "entry_price": 1.4396,
-    "current_price": 1.4305,
+    "current_price": 1.4173,
     "max_price": 1.4446,
-    "min_price": 1.4305,
+    "min_price": 1.4173,
     "in_top6": true
   },
   "BCH": {
     "entry_time": "2025-12-27T09:33:21.468726",
     "entry_price": 611.69,
-    "current_price": 612.83,
+    "current_price": 611.31,
     "max_price": 612.83,
     "min_price": 610.38,
     "in_top6": true
@@ -34,7 +34,7 @@
   "XPL": {
     "entry_time": "2025-12-27T09:33:21.468726",
     "entry_price": 0.15277,
-    "current_price": 0.15254,
+    "current_price": 0.15271,
     "max_price": 0.15384,
     "min_price": 0.15254,
     "in_top6": true
@@ -42,8 +42,8 @@
   "APT": {
     "entry_time": "2025-12-27T09:50:34.225113",
     "entry_price": 1.7124,
-    "current_price": 1.7124,
-    "max_price": 1.7124,
+    "current_price": 1.7146,
+    "max_price": 1.7146,
     "min_price": 1.7124,
     "in_top6": true
   }
